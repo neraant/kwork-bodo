@@ -1,0 +1,100 @@
+.main {
+	margin-top: 120px;
+}
+
+.about {
+	padding-bottom: 104px;
+}
+
+.about .about-offer {
+	background-color: #f3f3f6;
+}
+
+.about p {
+	font-size: 24px;
+	line-height: 24px;
+	margin-top: 24px;
+	margin-bottom: 28px;
+}
+
+.about-text p {
+	font-size: 16px;
+	line-height: 28px;
+}
+
+.about-advantages {
+	margin-bottom: 96px;
+}
+
+.about-advantages span {
+	font-size: 64px;
+	line-height: 64px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	color: #333333;
+}
+
+.about-advantages span::before {
+	content: '';
+	display: inline-block;
+	border-left: 3px solid #098b93;
+	border-bottom: 3px solid #098b93;
+	transform: rotate(225deg);
+	width: 25px;
+	height: 25px;
+	margin-left: 10px;
+	margin-right: 16px;
+	vertical-align: 10px;
+}
+
+.about-advantages p {
+	margin-top: 24px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 16px;
+	text-transform: uppercase;
+}
+
+.about p:last-child {
+	font-size: 16px;
+	line-height: 16px;
+}
+
+@media (max-width: 991px) {
+	.main {
+		margin-top: 50px;
+	}
+	.about {
+		padding-bottom: 0;
+	}
+	.about-offer .col-lg-6:first-child {
+		border-bottom: 1px solid #c5c5c5;
+	}
+	.about p {
+		font-size: 16px;
+	}
+	.about-text p,
+	.about p:last-child {
+		font-size: 12px;
+		line-height: 18px;
+	}
+	.about-advantages span {
+		display: flex;
+		align-items: center;
+		font-size: 32px;
+		line-height: 32px;
+	}
+	.about-advantages p {
+		font-size: 10px !important;
+		line-height: 16px !important;
+		margin-top: 12px;
+	}
+	.about-advantages span::before {
+		border-left: 2px solid #098b93;
+		border-bottom: 2px solid #098b93;
+		width: 12px;
+		height: 12px;
+		margin-left: 5px;
+	}
+}

@@ -1,0 +1,602 @@
+/* анимация карты */
+
+/* контейнер для всего */
+.map-wrapper {
+	min-height: 887px;
+	max-height: 887px;
+
+	max-width: 1128px;
+	margin: 0 auto;
+
+	height: 100%;
+	width: 100%;
+}
+
+/* контейнер для карты россии и свг */
+.russian-map-wrapper {
+	position: relative;
+	height: 100%;
+	width: 100%;
+
+	max-width: 1128px;
+
+	max-height: 887px;
+	min-height: 887px;
+
+	margin: 0px auto;
+	padding: 0;
+
+	filter: blur(16px);
+}
+
+.russian-map-wrapper.show {
+	animation: mapApearing 1.5s ease-in-out 1s forwards;
+}
+
+@keyframes mapApearing {
+	to {
+		filter: blur(0px);
+	}
+}
+
+/* карта россии */
+.russia-map-image {
+	object-fit: contain;
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: -1;
+}
+
+/* контейнер свг */
+.points-wrapper,
+.arrows-wrapper {
+	/* opacity: 0; */
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.arrows-wrapper {
+	z-index: 0;
+	width: 100%;
+	height: auto;
+}
+
+/* свг */
+.points-svg-wrapper,
+.arrows-svg-wrapper {
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-60%, -71%);
+
+	width: 762px;
+	height: 444px;
+}
+.arrows-svg-wrapper {
+	z-index: 0;
+
+	transform: translate(-61.8%, -72%);
+	width: 726px;
+	height: 407px;
+}
+
+.animated-path {
+	opacity: 0;
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+}
+.russian-map-wrapper.show .animated-path {
+	opacity: 1;
+	animation: draw 3s ease-in-out forwards;
+}
+
+@keyframes draw {
+	from {
+		stroke-dashoffset: 1000;
+		stroke-dasharray: 1000;
+	}
+	to {
+		stroke-dasharray: 5, 5;
+		stroke-dashoffset: 0;
+	}
+}
+
+.russian-map-wrapper.show .animated-path:nth-child(1) {
+	animation-delay: 7.8s;
+}
+.russian-map-wrapper.show .animated-path:nth-child(2) {
+	animation-delay: 7.6s;
+}
+.russian-map-wrapper.show .animated-path:nth-child(3) {
+	animation-delay: 7.4s;
+}
+.russian-map-wrapper.show .animated-path:nth-child(4) {
+	animation-delay: 7.2s;
+}
+.russian-map-wrapper.show .animated-path:nth-child(5) {
+	animation-delay: 7s;
+}
+.russian-map-wrapper.show .animated-path:nth-child(6) {
+	animation-delay: 6.8s;
+}
+.russian-map-wrapper.show .animated-path:nth-child(7) {
+	animation-delay: 6.6s;
+}
+.russian-map-wrapper.show .animated-path:nth-child(8) {
+	animation-delay: 6.4s;
+}
+.russian-map-wrapper.show .animated-path:nth-child(9) {
+	animation-delay: 4.4s;
+}
+.russian-map-wrapper.show .animated-path:nth-child(10) {
+	animation-delay: 6.2s;
+}
+.russian-map-wrapper.show .animated-path:nth-child(11) {
+	animation-delay: 6s;
+}
+.russian-map-wrapper.show .animated-path:nth-child(12) {
+	animation-delay: 5.8s;
+}
+.russian-map-wrapper.show .animated-path:nth-child(13) {
+	animation-delay: 5.6s;
+}
+.russian-map-wrapper.show .animated-path:nth-child(14) {
+	animation-delay: 5.4s;
+}
+.russian-map-wrapper.show .animated-path:nth-child(15) {
+	animation-delay: 5.2s;
+}
+.russian-map-wrapper.show .animated-path:nth-child(16) {
+	animation-delay: 5s;
+}
+.russian-map-wrapper.show .animated-path:nth-child(17) {
+	animation-delay: 4.8s;
+}
+.russian-map-wrapper.show .animated-path:nth-child(18) {
+	animation-delay: 4.6s;
+}
+.russian-map-wrapper.show .animated-path:nth-child(19) {
+	animation-delay: 4.2s;
+}
+.russian-map-wrapper.show .animated-path:nth-child(20) {
+	animation-delay: 4s;
+}
+.russian-map-wrapper.show .animated-path:nth-child(21) {
+	animation-delay: 3.8s;
+}
+.russian-map-wrapper.show .animated-path:nth-child(22) {
+	animation-delay: 3.6s;
+}
+
+.point-image {
+	opacity: 0;
+}
+
+.russian-map-wrapper.show .point-image {
+	transition: opacity 0.2s ease-in-out;
+}
+
+.moscow-point {
+	opacity: 0;
+}
+
+.russian-map-wrapper.show .moscow-point {
+	opacity: 1;
+	animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.russian-map-wrapper.show .points-wrapper path:nth-child(odd) {
+	opacity: 0;
+}
+
+/* Для теней меток */
+.russian-map-wrapper.show .points-wrapper path:nth-child(1) {
+	animation: fadeIn 0.2s ease-in-out 1.2s forwards;
+}
+
+.russian-map-wrapper.show .points-wrapper path:nth-child(3) {
+	animation: fadeIn 0.2s ease-in-out 1.4s forwards;
+}
+
+.russian-map-wrapper.show .points-wrapper path:nth-child(5) {
+	animation: fadeIn 0.2s ease-in-out 1.6s forwards;
+}
+
+.russian-map-wrapper.show .points-wrapper path:nth-child(7) {
+	animation: fadeIn 0.2s ease-in-out 1.8s forwards;
+}
+
+.russian-map-wrapper.show .points-wrapper path:nth-child(9) {
+	animation: fadeIn 0.2s ease-in-out 2s forwards;
+}
+
+.russian-map-wrapper.show .points-wrapper path:nth-child(11) {
+	animation: fadeIn 0.2s ease-in-out 2.2s forwards;
+}
+
+.russian-map-wrapper.show .points-wrapper path:nth-child(13) {
+	animation: fadeIn 0.2s ease-in-out 2.4s forwards;
+}
+
+.russian-map-wrapper.show .points-wrapper path:nth-child(15) {
+	animation: fadeIn 0.2s ease-in-out 2.6s forwards;
+}
+
+.russian-map-wrapper.show .points-wrapper path:nth-child(17) {
+	animation: fadeIn 0.2s ease-in-out 2.8s forwards;
+}
+
+.russian-map-wrapper.show .points-wrapper path:nth-child(19) {
+	animation: fadeIn 0.2s ease-in-out 3s forwards;
+}
+
+.russian-map-wrapper.show .points-wrapper path:nth-child(21) {
+	animation: fadeIn 0.2s ease-in-out 3.2s forwards;
+}
+
+.russian-map-wrapper.show .points-wrapper path:nth-child(23) {
+	animation: fadeIn 0.2s ease-in-out 3.4s forwards;
+}
+
+.russian-map-wrapper.show .points-wrapper path:nth-child(25) {
+	animation: fadeIn 0.2s ease-in-out 3.6s forwards;
+}
+
+.russian-map-wrapper.show .points-wrapper path:nth-child(27) {
+	animation: fadeIn 0.2s ease-in-out 3.8s forwards;
+}
+
+.russian-map-wrapper.show .points-wrapper path:nth-child(29) {
+	animation: fadeIn 0.2s ease-in-out 4s forwards;
+}
+
+.russian-map-wrapper.show .points-wrapper path:nth-child(31) {
+	animation: fadeIn 0.2s ease-in-out 4.2s forwards;
+}
+
+.russian-map-wrapper.show .points-wrapper path:nth-child(33) {
+	animation: fadeIn 0.2s ease-in-out 4.4s forwards;
+}
+
+.russian-map-wrapper.show .points-wrapper path:nth-child(35) {
+	animation: fadeIn 0.2s ease-in-out 4.6s forwards;
+}
+
+.russian-map-wrapper.show .points-wrapper path:nth-child(37) {
+	animation: fadeIn 0.2s ease-in-out 4.8s forwards;
+}
+
+.russian-map-wrapper.show .points-wrapper path:nth-child(39) {
+	animation: fadeIn 0.2s ease-in-out 5s forwards;
+}
+
+.russian-map-wrapper.show .points-wrapper path:nth-child(41) {
+	animation: fadeIn 0.2s ease-in-out 5.2s forwards;
+}
+
+.russian-map-wrapper.show .points-wrapper path:nth-child(43) {
+	animation: fadeIn 0.2s ease-in-out 5.4s forwards;
+}
+
+/* Для меток */
+.russian-map-wrapper.show .point-image:nth-child(2) {
+	animation: fadeIn 0.2s ease-in-out 1.2s forwards;
+}
+
+.russian-map-wrapper.show .point-image:nth-child(4) {
+	animation: fadeIn 0.2s ease-in-out 1.4s forwards;
+}
+
+.russian-map-wrapper.show .point-image:nth-child(6) {
+	animation: fadeIn 0.2s ease-in-out 1.6s forwards;
+}
+
+.russian-map-wrapper.show .point-image:nth-child(8) {
+	animation: fadeIn 0.2s ease-in-out 1.8s forwards;
+}
+
+.russian-map-wrapper.show .point-image:nth-child(10) {
+	animation: fadeIn 0.2s ease-in-out 2s forwards;
+}
+
+.russian-map-wrapper.show .point-image:nth-child(12) {
+	animation: fadeIn 0.2s ease-in-out 2.2s forwards;
+}
+
+.russian-map-wrapper.show .point-image:nth-child(14) {
+	animation: fadeIn 0.2s ease-in-out 2.4s forwards;
+}
+
+.russian-map-wrapper.show .point-image:nth-child(16) {
+	animation: fadeIn 0.2s ease-in-out 2.6s forwards;
+}
+
+.russian-map-wrapper.show .point-image:nth-child(18) {
+	animation: fadeIn 0.2s ease-in-out 2.8s forwards;
+}
+
+.russian-map-wrapper.show .point-image:nth-child(20) {
+	animation: fadeIn 0.2s ease-in-out 3s forwards;
+}
+
+.russian-map-wrapper.show .point-image:nth-child(22) {
+	animation: fadeIn 0.2s ease-in-out 3.2s forwards;
+}
+
+.russian-map-wrapper.show .point-image:nth-child(24) {
+	animation: fadeIn 0.2s ease-in-out 3.4s forwards;
+}
+
+.russian-map-wrapper.show .point-image:nth-child(26) {
+	animation: fadeIn 0.2s ease-in-out 3.6s forwards;
+}
+
+.russian-map-wrapper.show .point-image:nth-child(28) {
+	animation: fadeIn 0.2s ease-in-out 3.8s forwards;
+}
+
+.russian-map-wrapper.show .point-image:nth-child(30) {
+	animation: fadeIn 0.2s ease-in-out 4s forwards;
+}
+
+.russian-map-wrapper.show .point-image:nth-child(32) {
+	animation: fadeIn 0.2s ease-in-out 4.2s forwards;
+}
+
+.russian-map-wrapper.show .point-image:nth-child(34) {
+	animation: fadeIn 0.2s ease-in-out 4.4s forwards;
+}
+
+.russian-map-wrapper.show .point-image:nth-child(36) {
+	animation: fadeIn 0.2s ease-in-out 4.6s forwards;
+}
+
+.russian-map-wrapper.show .point-image:nth-child(38) {
+	animation: fadeIn 0.2s ease-in-out 4.8s forwards;
+}
+
+.russian-map-wrapper.show .point-image:nth-child(40) {
+	animation: fadeIn 0.2s ease-in-out 5s forwards;
+}
+
+.russian-map-wrapper.show .point-image:nth-child(42) {
+	animation: fadeIn 0.2s ease-in-out 5.2s forwards;
+}
+
+.russian-map-wrapper.show .point-image:nth-child(44) {
+	animation: fadeIn 0.2s ease-in-out 5.4s forwards;
+}
+
+/* Для картинок у меток */
+.russian-map-wrapper image {
+	opacity: 0;
+}
+
+.russian-map-wrapper.show image:nth-of-type(1) {
+	animation: fadeIn 0.2s ease-in-out 1s forwards;
+}
+
+.russian-map-wrapper.show image:nth-of-type(2) {
+	animation: fadeIn 0.2s ease-in-out 1.2s forwards;
+}
+
+.russian-map-wrapper.show image:nth-of-type(3) {
+	animation: fadeIn 0.2s ease-in-out 1.4s forwards;
+}
+
+.russian-map-wrapper.show image:nth-of-type(4) {
+	animation: fadeIn 0.2s ease-in-out 1.6s forwards;
+}
+
+.russian-map-wrapper.show image:nth-of-type(5) {
+	animation: fadeIn 0.2s ease-in-out 1.8s forwards;
+}
+
+.russian-map-wrapper.show image:nth-of-type(6) {
+	animation: fadeIn 0.2s ease-in-out 2s forwards;
+}
+
+.russian-map-wrapper.show image:nth-of-type(7) {
+	animation: fadeIn 0.2s ease-in-out 2.2s forwards;
+}
+
+.russian-map-wrapper.show image:nth-of-type(8) {
+	animation: fadeIn 0.2s ease-in-out 2.4s forwards;
+}
+
+.russian-map-wrapper.show image:nth-of-type(9) {
+	animation: fadeIn 0.2s ease-in-out 2.6s forwards;
+}
+
+.russian-map-wrapper.show image:nth-of-type(10) {
+	animation: fadeIn 0.2s ease-in-out 2.8s forwards;
+}
+
+.russian-map-wrapper.show image:nth-of-type(11) {
+	animation: fadeIn 0.2s ease-in-out 3s forwards;
+}
+
+.russian-map-wrapper.show image:nth-of-type(12) {
+	animation: fadeIn 0.2s ease-in-out 3.2s forwards;
+}
+
+.russian-map-wrapper.show image:nth-of-type(13) {
+	animation: fadeIn 0.2s ease-in-out 3.4s forwards;
+}
+
+.russian-map-wrapper.show image:nth-of-type(14) {
+	animation: fadeIn 0.2s ease-in-out 3.6s forwards;
+}
+
+.russian-map-wrapper.show image:nth-of-type(15) {
+	animation: fadeIn 0.2s ease-in-out 3.8s forwards;
+}
+
+.russian-map-wrapper.show image:nth-of-type(16) {
+	animation: fadeIn 0.2s ease-in-out 4s forwards;
+}
+
+.russian-map-wrapper.show image:nth-of-type(17) {
+	animation: fadeIn 0.2s ease-in-out 4.2s forwards;
+}
+
+.russian-map-wrapper.show image:nth-of-type(18) {
+	animation: fadeIn 0.2s ease-in-out 4.4s forwards;
+}
+
+.russian-map-wrapper.show image:nth-of-type(19) {
+	animation: fadeIn 0.2s ease-in-out 4.6s forwards;
+}
+
+.russian-map-wrapper.show image:nth-of-type(20) {
+	animation: fadeIn 0.2s ease-in-out 4.8s forwards;
+}
+
+.russian-map-wrapper.show image:nth-of-type(21) {
+	animation: fadeIn 0.2s ease-in-out 5s forwards;
+}
+
+.russian-map-wrapper.show image:nth-of-type(22) {
+	animation: fadeIn 0.2s ease-in-out 5.2s forwards;
+}
+
+.russian-map-wrapper.show image:nth-of-type(23) {
+	animation: fadeIn 0.2s ease-in-out 5.4s forwards;
+}
+
+/* Карта Европы контейнер */
+.europe-map-wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 3;
+}
+
+.europe-map-wrapper.show {
+	animation: europeFade 1.5s ease-in-out 1s forwards;
+}
+
+/* Карта Европы Фото*/
+.europe-map-image {
+}
+
+@keyframes europeFade {
+	to {
+		opacity: 0;
+		filter: blur(30px);
+		visibility: hidden;
+	}
+}
+
+@media (max-width: 1199px) {
+	.points-svg-wrapper {
+		width: 100%;
+		max-width: 640px;
+		transform: translate(-61%, -67%);
+	}
+
+	.arrows-svg-wrapper {
+		transform: translate(-62%, -69%);
+		width: 100%;
+		max-width: 613px;
+	}
+}
+
+@media (max-width: 991px) {
+	.points-svg-wrapper {
+		max-width: 475px;
+		transform: translate(-61%, -62%);
+	}
+
+	.arrows-svg-wrapper {
+		transform: translate(-62%, -63%);
+		max-width: 455px;
+	}
+}
+
+@media (max-width: 767px) {
+	.russian-map-wrapper,
+	.map-wrapper {
+		min-height: 407px;
+	}
+	.europe-map-wrapper {
+		max-width: 210px;
+	}
+
+	.points-svg-wrapper {
+		max-width: 353px;
+		transform: translate(-61%, -59%);
+	}
+
+	.arrows-svg-wrapper {
+		transform: translate(-62%, -60%);
+		max-width: 342px;
+	}
+}
+
+@media (max-width: 535px) {
+	.points-svg-wrapper {
+		max-width: 68vw;
+		height: 400px;
+	}
+	.arrows-svg-wrapper {
+		transform: translate(-62.5%, -59%);
+		max-width: 64vw;
+	}
+}
+
+@media (max-width: 480px) {
+	.points-svg-wrapper {
+		max-width: 67vw;
+		height: 345px;
+	}
+	.arrows-svg-wrapper {
+		transform: translate(-62%, -57.5%);
+		max-width: 64vw;
+	}
+}
+
+@media (max-width: 400px) {
+	.russian-map-wrapper,
+	.map-wrapper {
+		min-height: 315px;
+	}
+	.points-svg-wrapper {
+		height: 292px;
+	}
+	.arrows-svg-wrapper {
+		transform: translate(-62.5%, -57.5%);
+	}
+}
+
+@media (max-width: 350px) {
+	.points-svg-wrapper {
+		max-width: 66vw;
+		height: 257px;
+	}
+	.arrows-svg-wrapper {
+		transform: translate(-62.5%, -55.5%);
+		max-width: 62.5vw;
+	}
+}
+
+/*  */

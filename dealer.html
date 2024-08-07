@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Slider -->
+		<link rel="stylesheet" href="css/slick-theme.css" />
+		<link rel="stylesheet" href="css/slick.css" />
+		<!-- Style -->
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/dealer.css" />
+		<title>Bodo</title>
+	</head>
+	<body>
+		<header class="header" id="header">
+			<div class="container">
+				<nav
+					class="navbar-top d-flex align-items-center justify-content-between"
+				>
+					<a class="mobile-burger me-lg-5" href="#">
+						<img src="img/icon/menu-dots.svg" alt="Категории" />
+						<img class="d-lg-none" src="img/icon/close.svg" alt="Закрыть" />
+					</a>
+					<form role="search" class="d-none d-lg-flex">
+						<div class="input-group">
+							<span class="input-group-text" id="search">
+								<img src="img/icon/search.svg" alt="Поиск по сайту" />
+							</span>
+							<input
+								class="form-control me-2"
+								type="search"
+								placeholder="Поиск по сайту"
+								aria-label="Поиск по сайту"
+								aria-describedby="search"
+							/>
+						</div>
+					</form>
+					<div class="region ms-lg-auto d-flex align-items-center">
+						<img src="img/icon/marker.svg" alt="Регион" />
+						<span class="ms-2 d-none d-lg-block"> Москва </span>
+					</div>
+					<a
+						class="phone d-flex align-items-center ms-lg-5"
+						href="tel:88003005577"
+					>
+						<img src="img/icon/phone.svg" alt="Позвонить" />
+						<span class="ms-2 d-none d-lg-block"> 8 800 300 55 77 </span>
+					</a>
+					<div class="social d-none d-lg-flex align-items-center ms-5">
+						<a href="#" class="d-flex">
+							<img src="img/icon/whatsapp.svg" alt="WhatsApp" />
+						</a>
+						<a href="#" class="d-flex ms-2">
+							<img src="img/icon/telegram.svg" alt="Telegram" />
+						</a>
+					</div>
+					<div class="dropdown ms-4 d-none d-lg-block">
+						<button
+							class="btn dropdown-toggle"
+							id="dropdownMenuButton2"
+							type="button"
+							data-bs-toggle="dropdown"
+							aria-expanded="false"
+						>
+							<img src="img/ru.jpg" alt="Русский" />
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+							<li>
+								<a class="dropdown-item d-flex active" href="#">
+									<img src="img/ru.jpg" alt="Русский" />
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item d-flex" href="#">
+									<img src="img/ru.jpg" alt="Русский" />
+								</a>
+							</li>
+						</ul>
+					</div>
+					<a href="index.html" class="logo-mob d-lg-none">
+						<img src="img/logo.png" alt="Bodo" />
+					</a>
+					<a href="#" class="search-mob d-lg-none">
+						<img src="img/icon/search.svg" alt="Поиск по сайту" />
+					</a>
+					<a href="#" class="favorite-mob d-lg-none">
+						<img src="img/icon/favorite.svg" alt="Сохраненные" />
+					</a>
+					<a href="checkout.html" class="basket-mob d-lg-none">
+						<img src="img/icon/basket.svg" alt="Корзина" />
+					</a>
+				</nav>
+				<hr />
+				<nav
+					class="navbar mt-2 d-none d-lg-flex align-items-center navbar-expand-lg"
+				>
+					<div class="container-fluid">
+						<a class="navbar-brand" href="index.html">
+							<img src="img/logo.png" alt="Bodo" />
+						</a>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav m-auto mb-2 mb-lg-0">
+								<li class="nav-item">
+									<a class="nav-link" href="catalog.html">Каталог</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="about.html">О компании</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="delivery.html">Доставка и оплата</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="sale.html">Распродажа</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="stock.html">Акции</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="contacts.html">Контакты</a>
+								</li>
+							</ul>
+						</div>
+						<button class="btn btn-primary open-modal-form-btn">
+							Оставить заявку
+						</button>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<div class="modal-form-wrapper">
+			<form class="modal-form">
+				<div class="modal-form-title-row">
+					<h2 class="modal-form-title">Форма обратной связи</h2>
+
+					<img class="close-modal-form-image" src="img/icon/close.svg" alt="" />
+				</div>
+
+				<div class="switch-container">
+					<input
+						class="toggle-input"
+						type="checkbox"
+						name="switch"
+						id="switch"
+					/>
+					<label class="toggle-label" for="switch"></label>
+					<label for="switch" class="modal-form-toggle-label"
+						>написать руководителю</label
+					>
+				</div>
+
+				<label class="modal-form-label" for="modal-name">
+					<input type="text" class="form-control" placeholder="Имя" required />
+				</label>
+
+				<label class="modal-form-label" for="modal-phone">
+					<input
+						type="text"
+						class="form-control"
+						placeholder="ТЕЛЕФОН"
+						required
+					/>
+				</label>
+
+				<label class="modal-form-label" for="modal-email">
+					<input
+						type="email"
+						class="form-control"
+						placeholder="E-MAIL"
+						required
+					/>
+				</label>
+
+				<label class="modal-form-label" for="modal-question">
+					<textarea
+						type="text"
+						class="modal-form-textarea"
+						placeholder="ВАШ ВОПРОС"
+						rows="10"
+						required
+					></textarea>
+				</label>
+
+				<button class="modal-form-btn" type="submit">ОТПРАВИТЬ</button>
+			</form>
+		</div>
+
+		<div class="overlay"></div>
+
+		<div class="mobile-menu d-lg-none position-fixed">
+			<ul class="navbar-nav">
+				<h5 class="text-white">Меню</h5>
+				<li class="nav-item">
+					<a class="nav-link nav-link__sub" href="catalog.html" tabindex="1"
+						>Каталог</a
+					>
+					<ul class="submenu">
+						<a href="#" class="submenu__back d-flex align-items-center">
+							<img src="img/icon/mobile-arrow.svg" alt="Назад" />
+							<h5 class="text-white ms-2 mb-0">Каталог</h5>
+						</a>
+						<li class="nav-item">
+							<a class="nav-link" href="#"> Массажеры </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"> Массажеры </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"> Массажеры </a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="about.html">О компании</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="delivery.html">Доставка и оплата</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="sale.html">Распродажа</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="stock.html">Акции</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contacts.html">Контакты</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="mobile-overlay position-absolute"></div>
+
+		<main class="main">
+			<section class="dealer" id="dealer">
+				<div class="container">
+					<div class="row appearing-element-right-block">
+						<div class="breadcrumbs">
+							<a href="index.html">Главная</a> / <span>Стать дилером</span>
+						</div>
+					</div>
+					<h2 class="dealer-title appearing-element-info-block">
+						<span>Стать</span> дилером
+					</h2>
+					<p class="dealer-text appearing-element-info-block">
+						Опытные специалисты компании Sensa-massage проконсультируют вас
+						перед покупкой массажного кресла, массажера, массажных столов или
+						стульев, предоставят всю необходимую информацию для их беспроблемной
+						доставки, разгрузки и сборки. Они быстро и профессионально смогут
+						подготовить массажное оборудование к использованию. Мы берем на себя
+						как гарантийное, так и постгарантийное обслуживание. Замена и ремонт
+						неисправных деталей происходит быстро, благодаря наличию необходимых
+						запчастей на нашем складе.
+					</p>
+				</div>
+			</section>
+
+			<section class="map-section">
+				<div id="map-container">
+					<div id="map"></div>
+				</div>
+			</section>
+
+			<section class="dealer-services-section">
+				<div class="container">
+					<div class="dealer-services-section-inner">
+						<h2 class="dealer-services-title appearing-element-info-block">
+							Мы <span>предлагаем</span>
+						</h2>
+
+						<div class="dealer-services-row">
+							<ul class="dealer-services-list">
+								<li
+									class="dealer-services-list-item appearing-element-shops-map-block"
+								>
+									Широкий выбор высококачественной продукции от ведущих
+									производителей из Японии, Канады, США, Китая и Европы
+								</li>
+								<li
+									class="dealer-services-list-item appearing-element-shops-map-block"
+								>
+									Наличие товара на складе в Москве
+								</li>
+								<li
+									class="dealer-services-list-item appearing-element-shops-map-block"
+								>
+									Обеспечение сервисных услуг и поддержание гарантийных
+									обязательств
+								</li>
+							</ul>
+
+							<ul class="dealer-services-list">
+								<li
+									class="dealer-services-list-item appearing-element-shops-map-block"
+								>
+									Выгодные закупочные цены
+								</li>
+								<li
+									class="dealer-services-list-item appearing-element-shops-map-block"
+								>
+									Специальные цены на выставочные образцы
+								</li>
+								<li
+									class="dealer-services-list-item appearing-element-shops-map-block"
+								>
+									Рекламную поддержку и каталоги
+								</li>
+								<li
+									class="dealer-services-list-item appearing-element-shops-map-block"
+								>
+									Обучение продавцов и технической службы
+								</li>
+								<li
+									class="dealer-services-list-item appearing-element-shops-map-block"
+								>
+									Техническую поддержку и консультации
+								</li>
+							</ul>
+
+							<ul class="dealer-services-list">
+								<li
+									class="dealer-services-list-item appearing-element-shops-map-block"
+								>
+									Презентация продукта
+								</li>
+								<li
+									class="dealer-services-list-item appearing-element-shops-map-block"
+								>
+									Продвижение продукта (реклама, участие в выставках)
+								</li>
+								<li
+									class="dealer-services-list-item appearing-element-shops-map-block"
+								>
+									Организация продаж по всем каналам сбыта (частные клиенты,
+									корпоративные клиенты, посредники)
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="dealer-form-section">
+				<div class="container">
+					<div
+						class="dealer-form-section-inner appearing-element-product-block"
+					>
+						<form class="dealer-form">
+							<h2 class="dealer-form-title">
+								Хотите стать <span>нашим дилером?</span>
+							</h2>
+
+							<div class="input-row">
+								<div class="input-column">
+									<label for="dealer-name">
+										<input
+											type="text"
+											id="dealer-name"
+											class="form-control dealer-input"
+											placeholder="Имя"
+											required=""
+										/>
+									</label>
+
+									<label for="dealer-email">
+										<input
+											id="dealer-email"
+											type="email"
+											class="form-control dealer-input"
+											placeholder="E-MAIL"
+											required=""
+										/>
+									</label>
+								</div>
+
+								<label class="dealer-textarea-wrapper" for="dealer-comment">
+									<textarea
+										placeholder="ТЕКСТ ПРЕДЛОЖЕНИЯ"
+										id="dealer-comment"
+										class="form-control dealer-input dealer-textarea"
+									></textarea>
+								</label>
+							</div>
+
+							<div class="agreement-container">
+								<div class="agreement-wrapper">
+									<div class="custom-checkbox-wrapper">
+										<input
+											type="checkbox"
+											class="custom-checkbox"
+											id="agreement"
+											name="agreement"
+										/>
+										<label class="agreement-text" for="agreement"></label>
+									</div>
+
+									<span class="agreement-text">
+										Я даю своё согласие на обработку моих персональных данных в
+										соответствии с законом № 152-ФЗ "О персональных данных" от
+										27.07.2006 и принимаю условия
+										<a href="terms.html">Пользовательского соглашения</a>
+									</span>
+								</div>
+								<button type="submit" class="dealer-form-btn">
+									ОТПРАВИТЬ ЗАПРОС
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer section" id="footer">
+			<div class="container">
+				<form class="row align-items-center">
+					<div class="col-lg-5">
+						<label for="name">
+							<input
+								type="name"
+								class="form-control"
+								placeholder="Имя"
+								required
+							/>
+						</label>
+					</div>
+					<div class="col-lg-5 my-3 my-lg-0">
+						<label for="tel">
+							<input
+								type="tel"
+								class="form-control"
+								placeholder="Телефон"
+								required
+							/>
+						</label>
+					</div>
+					<div class="col-lg-2">
+						<button type="submit" class="btn btn-primary h-lg-100 w-100">
+							Отправить
+						</button>
+					</div>
+				</form>
+			</div>
+			<hr />
+			<div class="container text-white">
+				<div class="row mt-5">
+					<div
+						class="col-lg-5 d-flex flex-column align-items-center d-lg-block"
+					>
+						<img src="img/footer-logo.png" alt="Bodo" />
+						<div class="mt-3">Широкий ассортимент массажного оборудования</div>
+						<div class="row mt-5 d-none d-lg-block">
+							<div class="col-lg-6">
+								<div class="footer-contact">
+									<div class="mb-1">Региональный отдел:</div>
+									<a href="tel:88003005577" class="text-white">
+										8 800 300 55 77
+									</a>
+								</div>
+								<div class="footer-contact my-3">
+									<div class="mb-1">Москва:</div>
+									<a href="tel:+74993017415" class="text-white">
+										+7 (499) 301-74-15
+									</a>
+								</div>
+								<div class="footer-contact">
+									<div class="mb-1">Санкт-Петербург:</div>
+									<a href="tel:+78122441191" class="text-white">
+										+7 (812) 244-11-91
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="footer-contact">
+									<div class="mb-1">Казань:</div>
+									<a href="tel:+78432045574" class="text-white">
+										+7 (843) 204-55-74
+									</a>
+								</div>
+								<div class="footer-contact my-3">
+									<div class="mb-1">Краснодар:</div>
+									<a href="tel:+78612060860" class="text-white">
+										+7 (861) 206-08-60
+									</a>
+								</div>
+								<div class="footer-contact">
+									<div class="mb-1">Новосибирск:</div>
+									<a href="tel:+73833442552" class="text-white">
+										+7 (383) 344-25-52
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-7 d-none d-lg-block">
+						<div class="footer-contact">
+							<div class="mb-2">По всем вопросам:</div>
+							<h4>
+								<a href="mailto:hallo@bodo-massage.ru" class="text-white">
+									hallo@bodo-massage.ru
+								</a>
+							</h4>
+						</div>
+						<div class="d-flex flex-column flex-lg-row mt-5">
+							<div class="footer-menu">
+								<h5>Каталог</h5>
+								<a href="catalog.html">Массажные кресла</a>
+								<a href="catalog.html">Массажеры</a>
+								<a href="catalog.html">Массажные столы и стулья</a>
+							</div>
+							<div class="footer-menu">
+								<h5>Клиентам</h5>
+								<a href="stock.html">Акции</a>
+								<a href="sale.html">Распродажа</a>
+								<a href="blog.html">Полезные статьи</a>
+								<a href="companies.html">Лица компании</a>
+							</div>
+							<div class="footer-menu">
+								<h5>Контакты</h5>
+								<a href="contacts.html">Адреса магазинов</a>
+								<a href="service.html">Сервисная служба</a>
+								<a href="dealer.html">Стать диллером</a>
+								<a href="requisites.html">Реквизиты</a>
+								<button class="open-modal-form-btn">Контактная форма</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div
+					class="accordion accordion-flush mt-4 d-lg-none"
+					id="accordionFlushExample"
+				>
+					<div class="accordion-item">
+						<h5 class="accordion-header">
+							<button
+								class="accordion-button py-3 px-0 collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseOne"
+								aria-expanded="false"
+								aria-controls="flush-collapseOne"
+							>
+								Связаться с нами
+							</button>
+						</h5>
+						<div
+							id="flush-collapseOne"
+							class="accordion-collapse collapse"
+							data-bs-parent="#accordionFlushExample"
+						>
+							<div class="accordion-body">
+								<div class="footer-contact">
+									<div class="mb-1">Региональный отдел:</div>
+									<a href="tel:88003005577" class="text-white">
+										8 800 300 55 77
+									</a>
+								</div>
+								<div class="footer-contact my-3">
+									<div class="mb-1">Москва:</div>
+									<a href="tel:+74993017415" class="text-white">
+										+7 (499) 301-74-15
+									</a>
+								</div>
+								<div class="footer-contact">
+									<div class="mb-1">Санкт-Петербург:</div>
+									<a href="tel:+78122441191" class="text-white">
+										+7 (812) 244-11-91
+									</a>
+								</div>
+								<div class="footer-contact">
+									<div class="mb-1">Казань:</div>
+									<a href="tel:+78432045574" class="text-white">
+										+7 (843) 204-55-74
+									</a>
+								</div>
+								<div class="footer-contact my-3">
+									<div class="mb-1">Краснодар:</div>
+									<a href="tel:+78612060860" class="text-white">
+										+7 (861) 206-08-60
+									</a>
+								</div>
+								<div class="footer-contact">
+									<div class="mb-1">Новосибирск:</div>
+									<a href="tel:+73833442552" class="text-white">
+										+7 (383) 344-25-52
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h5 class="accordion-header">
+							<button
+								class="accordion-button py-3 px-0 collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseTwo"
+								aria-expanded="false"
+								aria-controls="flush-collapseTwo"
+							>
+								Каталог
+							</button>
+						</h5>
+						<div
+							id="flush-collapseTwo"
+							class="accordion-collapse collapse"
+							data-bs-parent="#accordionFlushExample"
+						>
+							<div class="accordion-body">
+								<div class="footer-menu">
+									<a href="catalog.html"> Массажные кресла </a>
+									<a href="catalog.html"> Массажеры </a>
+									<a href="catalog.html"> Массажные столы и стулья </a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h5 class="accordion-header">
+							<button
+								class="accordion-button py-3 px-0 collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseThree"
+								aria-expanded="false"
+								aria-controls="flush-collapseThree"
+							>
+								Клиентам
+							</button>
+						</h5>
+						<div
+							id="flush-collapseThree"
+							class="accordion-collapse collapse"
+							data-bs-parent="#accordionFlushExample"
+						>
+							<div class="accordion-body d-flex flex-column">
+								<div class="footer-menu">
+									<a href="stock.html"> Акции </a>
+									<a href="sale.html"> Распродажа </a>
+									<a href="blog.html"> Полезные статьи </a>
+									<a href="companies.html"> Лица компании </a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h5 class="accordion-header">
+							<button
+								class="accordion-button py-3 px-0 collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseFour"
+								aria-expanded="false"
+								aria-controls="flush-collapseThree"
+							>
+								Контакты
+							</button>
+						</h5>
+						<div
+							id="flush-collapseFour"
+							class="accordion-collapse collapse"
+							data-bs-parent="#accordionFlushExample"
+						>
+							<div class="accordion-body d-flex flex-column">
+								<div class="footer-menu">
+									<a href="contacts.html"> Адреса магазинов </a>
+									<a href="service.html"> Сервисная служба </a>
+									<a href="dealer.html"> Стать диллером </a>
+									<a href="requisites.html"> Реквизиты </a>
+									<button class="open-modal-form-btn">Контактная форма</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div
+					class="footer-social d-flex align-items-center justify-content-center justify-content-lg-start mt-5"
+				>
+					<a href="#" class="me-5">
+						<img src="img/icon/footer-instagram.svg" alt="Instagram" />
+					</a>
+					<a href="#">
+						<img src="img/icon/footer-facebook.svg" alt="Facebook" />
+					</a>
+					<a
+						href="terms.html"
+						class="text-white text-underline d-none d-lg-block mx-5 px-5"
+					>
+						Политика конфиденциальности
+					</a>
+					<a
+						href="#"
+						class="ms-4 me-5 text-white d-none d-lg-flex align-items-center"
+					>
+						<img src="img/icon/footer-telegram.svg" alt="Telegram" />
+						<span class="ms-3"> Telegram </span>
+					</a>
+					<a
+						href="#"
+						class="ms-5 text-white d-none d-lg-flex align-items-center"
+					>
+						<img src="img/icon/footer-whatsapp.svg" alt="WhatsApp" />
+						<span class="ms-3"> WhatsApp </span>
+					</a>
+				</div>
+				<div class="footer-social text-center mt-4 d-lg-none">
+					<a href="terms.html" class="text-white text-underline">
+						Политика конфиденциальности
+					</a>
+				</div>
+				<div class="footer-contact text-center text-lg-start mt-5">
+					<div>
+						www.bodo-russia.ru ©2007-2024 продажа массажного оборудования,
+						массажные кресла, массажеры. 16+
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/jquery-3.7.1.min.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
+		<script src="js/jquery.maskedinput.min.js"></script>
+		<script
+			src="https://kit.fontawesome.com/a3e1a0008d.js"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+			integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+			crossorigin="anonymous"
+		></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/dealer.js"></script>
+
+		<script
+			src="https://api-maps.yandex.ru/2.1/?apikey=6c58f8a5-0c94-44fd-ba77-27d32e578547
+			&lang=ru_RU"
+			type="text/javascript"
+		></script>
+
+		<script src="js/stopAnimations.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

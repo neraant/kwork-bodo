@@ -1,0 +1,169 @@
+.main {
+	margin-top: 120px;
+}
+
+.requisites h2 {
+	margin-bottom: 24px;
+}
+
+.requisites p.fw-600 {
+	font-size: 24px;
+	line-height: 24px;
+	margin-bottom: 48px;
+}
+
+.subtitle-text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	color: #636363;
+}
+
+.our-requisites-section {
+	margin-top: 56px;
+	margin-bottom: 140px;
+}
+
+.our-requisites-section-inner {
+	background-color: #f5f5f5;
+	padding: 32px 24px;
+	border-radius: 12px;
+}
+
+.our-requisites-title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 20px;
+	color: #333333;
+
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	margin-bottom: 24px;
+}
+
+.our-requisites-title::after {
+	content: '';
+	background: #c5c5c5;
+	width: 100%;
+	height: 1px;
+}
+
+.our-requisites-content {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.our-requisites-block {
+	display: flex;
+	justify-content: space-between;
+	gap: 26px;
+}
+
+.our-requisites-block-title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 22px;
+	color: #858585;
+
+	display: flex;
+	align-items: center;
+	gap: 8px;
+
+	width: 100%;
+	max-width: 320px;
+}
+
+.our-requisites-block-title::before {
+	content: '';
+	background: #f9ae00;
+	width: 100%;
+	border-radius: 50%;
+	max-width: 6px;
+	height: 6px;
+}
+
+.our-requisites-block-text {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 22px;
+	color: #333333;
+
+	width: 100%;
+}
+
+@media (max-width: 991px) {
+	.main {
+		margin-top: 50px;
+	}
+}
+
+@media (max-width: 767px) {
+	.our-requisites-block-title {
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	.our-requisites-block-text {
+		font-size: 14px;
+		line-height: 16px;
+	}
+}
+
+@media (max-width: 560px) {
+	.our-requisites-section {
+		margin-top: 32px;
+		margin-bottom: 0;
+	}
+	.requisites h2 {
+		margin-bottom: 16px;
+	}
+	.requisites p.fw-600 {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 22px;
+		color: #333333;
+		margin-bottom: 20px;
+	}
+	.subtitle-text {
+		font-size: 12px;
+		line-height: 18px;
+	}
+	.our-requisites-section-inner {
+		padding: 24px 16px;
+	}
+	.our-requisites-title {
+		font-size: 14px;
+		line-height: 20px;
+		gap: 16px;
+		margin-bottom: 16px;
+	}
+	.our-requisites-content {
+		gap: 12px;
+	}
+	.our-requisites-block {
+		flex-direction: column;
+		gap: 4px;
+	}
+	.our-requisites-block-title {
+		font-size: 12px;
+		line-height: 18px;
+		max-width: none;
+		width: auto;
+	}
+
+	.our-requisites-block-text {
+		font-size: 12px;
+		line-height: 18px;
+	}
+}
+
+@media (max-width: 480px) {
+	.breadcrumbs {
+		margin-top: 24px;
+	}
+}

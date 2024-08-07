@@ -1,0 +1,186 @@
+.main {
+	margin-top: 120px;
+}
+
+.companies-title {
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 48px;
+	color: #333333;
+	margin-bottom: 24px;
+}
+
+.companies-subtitle {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 24px;
+	color: #333333;
+	margin-bottom: 48px;
+}
+
+.companies-subtitle-text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	color: #636363;
+	margin-bottom: 56px;
+}
+
+.team-section-inner {
+	display: flex;
+	flex-direction: column;
+	gap: 44px;
+}
+
+.person-row {
+	display: flex;
+	align-items: center;
+	gap: 44px;
+}
+
+.person-card {
+	flex: 1;
+	position: relative;
+	z-index: 2;
+	min-height: 500px;
+	max-height: 500px;
+}
+
+.person-card-info {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.5s ease-out, margin-top 0.5s ease-out;
+	margin-top: 0;
+}
+
+.person-card:hover .person-card-info {
+	max-height: 500px;
+	margin-top: 12px;
+}
+
+.person-card:hover .person-card-content {
+	top: 30px;
+}
+
+.person-card::after {
+	content: '';
+	background: #6cb4b8;
+	border-radius: 12px;
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+	z-index: 0;
+	bottom: -20px;
+	right: -20px;
+}
+
+.person-card-content {
+	position: absolute;
+	top: 80%;
+	left: 10px;
+	right: 10px;
+	z-index: 2;
+	transition: top 0.5s ease-out;
+}
+
+.person-image-wrapper {
+	width: 100%;
+	min-height: 500px;
+	max-height: 500px;
+	position: relative;
+	z-index: 1;
+}
+
+.person-image-wrapper::after {
+	content: '';
+	background: linear-gradient(to bottom, transparent, hsl(183, 88%, 31%, 0.8));
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-radius: 12px;
+}
+
+img.person-image {
+	width: 100%;
+	min-height: 500px;
+	max-height: 500px;
+	object-fit: cover;
+	border-radius: 12px;
+}
+
+.person-type {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 16px;
+	color: hsl(0, 0%, 100%, 0.72);
+	margin-bottom: 8px;
+}
+
+.person-fullname {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 28px;
+	color: #fff;
+}
+
+.person-list {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.person-list-item {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	color: hsl(0, 0%, 100%, 0.72);
+
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.person-list-item::before {
+	content: '';
+	background: #f9ae00;
+	border-radius: 50%;
+	width: 6px;
+	height: 6px;
+	flex-shrink: 0;
+}
+
+@media (max-width: 1199px) {
+	.person-row {
+		flex-wrap: wrap;
+	}
+	.person-card {
+		width: 45%;
+		flex: auto;
+	}
+}
+
+@media (max-width: 991px) {
+	.main {
+		margin-top: 50px;
+	}
+}
+
+@media (max-width: 575px) {
+	.person-card {
+		width: 100%;
+		margin-right: 20px;
+	}
+}
+
+@media (max-width: 480px) {
+	.breadcrumbs {
+		margin-top: 24px;
+	}
+}

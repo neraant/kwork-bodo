@@ -1,0 +1,2282 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/fullpage.css" />
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Slider -->
+		<link rel="stylesheet" href="css/slick-theme.css" />
+		<link rel="stylesheet" href="css/slick.css" />
+		<!-- Style -->
+		<link rel="stylesheet" href="css/map-animations.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<title>Bodo</title>
+	</head>
+	<body>
+		<div id="preloader">
+			<div class="preloader-inner">
+				<img class="loading-image" src="img/loading-logo.svg" alt="loading" />
+				<div class="progress-bar-wrapper">
+					<div class="more-arrow loader-arrow"></div>
+					<span class="progress-bar-text">0%</span>
+				</div>
+			</div>
+		</div>
+		<div id="content">
+			<header class="header main-page-header" id="header">
+				<div class="container">
+					<nav
+						class="navbar-top d-flex align-items-center justify-content-between"
+					>
+						<a class="mobile-burger me-lg-5" href="#">
+							<img src="img/icon/menu-dots.svg" alt="Категории" />
+							<img class="d-lg-none" src="img/icon/close.svg" alt="Закрыть" />
+						</a>
+						<form role="search" class="d-none d-lg-flex">
+							<div class="input-group">
+								<span class="input-group-text" id="search">
+									<img src="img/icon/search.svg" alt="Поиск по сайту" />
+								</span>
+								<input
+									class="form-control me-2"
+									type="search"
+									placeholder="Поиск по сайту"
+									aria-label="Поиск по сайту"
+									aria-describedby="search"
+								/>
+							</div>
+						</form>
+						<div class="region ms-lg-auto d-flex align-items-center">
+							<img src="img/icon/marker.svg" alt="Регион" />
+							<span class="ms-2 d-none d-lg-block"> Москва </span>
+						</div>
+						<a
+							class="phone d-flex align-items-center ms-lg-5"
+							href="tel:88003005577"
+						>
+							<img src="img/icon/phone.svg" alt="Позвонить" />
+							<span class="ms-2 d-none d-lg-block"> 8 800 300 55 77 </span>
+						</a>
+						<div class="social d-none d-lg-flex align-items-center ms-5">
+							<a href="#" class="d-flex">
+								<img src="img/icon/whatsapp.svg" alt="WhatsApp" />
+							</a>
+							<a href="#" class="d-flex ms-2">
+								<img src="img/icon/telegram.svg" alt="Telegram" />
+							</a>
+						</div>
+						<div class="dropdown ms-4 d-none d-lg-block">
+							<button
+								class="btn dropdown-toggle"
+								id="dropdownMenuButton2"
+								type="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								<img src="img/ru.jpg" alt="Русский" />
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+								<li>
+									<a class="dropdown-item d-flex active" href="#">
+										<img src="img/ru.jpg" alt="Русский" />
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-item d-flex" href="#">
+										<img src="img/ru.jpg" alt="Русский" />
+									</a>
+								</li>
+							</ul>
+						</div>
+						<a href="index.html" class="logo-mob d-lg-none">
+							<img src="img/logo.png" alt="Bodo" />
+						</a>
+						<a href="#" class="search-mob d-lg-none">
+							<img src="img/icon/search.svg" alt="Поиск по сайту" />
+						</a>
+						<a href="#" class="favorite-mob d-lg-none">
+							<img src="img/icon/favorite.svg" alt="Сохраненные" />
+						</a>
+						<a href="checkout.html" class="basket-mob d-lg-none">
+							<img src="img/icon/basket.svg" alt="Корзина" />
+						</a>
+					</nav>
+					<hr />
+					<nav
+						class="navbar mt-2 d-none d-lg-flex align-items-center navbar-expand-lg"
+					>
+						<div class="container-fluid">
+							<a class="navbar-brand" href="index.html">
+								<img src="img/logo.png" alt="Bodo" />
+							</a>
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+								<ul class="navbar-nav m-auto mb-2 mb-lg-0">
+									<li class="nav-item">
+										<a class="nav-link" href="catalog.html">Каталог</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="about.html">О компании</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="delivery.html"
+											>Доставка и оплата</a
+										>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="sale.html">Распродажа</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="stock.html">Акции</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="contacts.html">Контакты</a>
+									</li>
+								</ul>
+							</div>
+							<button class="btn btn-primary open-modal-form-btn">
+								Оставить заявку
+							</button>
+						</div>
+					</nav>
+				</div>
+			</header>
+
+			<div class="modal-form-wrapper">
+				<form class="modal-form">
+					<div class="modal-form-title-row">
+						<h2 class="modal-form-title">Форма обратной связи</h2>
+
+						<img
+							class="close-modal-form-image"
+							src="img/icon/close.svg"
+							alt=""
+						/>
+					</div>
+
+					<div class="switch-container">
+						<input
+							class="toggle-input"
+							type="checkbox"
+							name="switch"
+							id="switch"
+						/>
+						<label class="toggle-label" for="switch"></label>
+						<label for="switch" class="modal-form-toggle-label"
+							>написать руководителю</label
+						>
+					</div>
+
+					<label class="modal-form-label" for="modal-name">
+						<input
+							type="text"
+							class="form-control"
+							placeholder="Имя"
+							required
+						/>
+					</label>
+
+					<label class="modal-form-label" for="modal-phone">
+						<input
+							type="text"
+							class="form-control"
+							placeholder="ТЕЛЕФОН"
+							required
+						/>
+					</label>
+
+					<label class="modal-form-label" for="modal-email">
+						<input
+							type="email"
+							class="form-control"
+							placeholder="E-MAIL"
+							required
+						/>
+					</label>
+
+					<label class="modal-form-label" for="modal-question">
+						<textarea
+							type="text"
+							class="modal-form-textarea"
+							placeholder="ВАШ ВОПРОС"
+							rows="10"
+							required
+						></textarea>
+					</label>
+
+					<button class="modal-form-btn" type="submit">ОТПРАВИТЬ</button>
+				</form>
+			</div>
+
+			<div class="overlay"></div>
+
+			<div class="mobile-menu d-lg-none position-fixed">
+				<ul class="navbar-nav">
+					<h3 class="text-white">Меню</h3>
+					<li class="nav-item">
+						<a class="nav-link nav-link__sub" href="catalog.html" tabindex="1"
+							>Каталог</a
+						>
+						<ul class="submenu">
+							<a
+								href="catalog.html"
+								class="submenu__back d-flex align-items-center"
+							>
+								<img src="img/icon/mobile-arrow.svg" alt="Назад" />
+								<h3 class="text-white ms-2 mb-0">Каталог</h3>
+							</a>
+							<li class="nav-item">
+								<a class="nav-link" href="#"> Массажеры </a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#"> Массажеры </a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#"> Массажеры </a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">О компании</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="delivery.html">Доставка и оплата</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="sale.html">Распродажа</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="stock.html">Акции</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contacts.html">Контакты</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="mobile-overlay position-absolute"></div>
+
+			<div id="fullpage" class="scrollspanc-container">
+				<section class="offer section" id="offer">
+					<div class="container-fluid position-relative p-0">
+						<div class="offer-bg-top position-relative">
+							<div class="container">
+								<div class="overflow-hidden position-relative leaf-container">
+									<img src="img/tropic.png" class="tropic-img" />
+									<img src="img/tropic-shadow.png" class="tropic-img-shadow" />
+								</div>
+							</div>
+						</div>
+
+						<div class="offer-bg-bottom position-relative sand-image-container">
+							<img class="position-absolute" src="img/offer-sand.png" />
+						</div>
+
+						<div class="offer-slider container position-absolute">
+							<div class="row">
+								<div
+									class="col-lg-5 d-flex flex-column text-white offer-slider-text-container"
+								>
+									<div class="slider-text-container">
+										<span class="offer-slider__subtitle text-uppercase">
+											Массажные кресла1
+										</span>
+										<h2 class="">Bodo ecto sport brown gold</h2>
+										<p class="offer-slider__text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+											sed do eiusmod tempor incididunt ut labore et dolore magna
+											aliqua. Ut enim ad minim veniam, quis
+										</p>
+									</div>
+
+									<img
+										src="img/offer-slide.png"
+										alt="Bodo ecto sport brown gold"
+										class="d-lg-none offer-slider-image-animation"
+									/>
+
+									<div
+										class="d-flex mt-2 mt-lg-auto mb-5 slider-btns-container"
+									>
+										<a
+											href="catalog.html"
+											class="offer-slider__btn btn btn-outline-info text-uppercase me-3 me-lg-5"
+										>
+											Подробнее
+										</a>
+										<button
+											class="offer-prev slider-prev"
+											type="button"
+										></button>
+										<button
+											class="offer-next slider-next"
+											type="button"
+										></button>
+									</div>
+								</div>
+								<div class="col-lg-6 offer-slider-image-container">
+									<img
+										src="img/offer-slide.png"
+										alt="Bodo ecto sport brown gold"
+										class="d-none d-lg-block"
+									/>
+								</div>
+							</div>
+
+							<div class="row">
+								<div
+									class="col-lg-5 d-flex flex-column text-white offer-slider-text-container"
+								>
+									<div class="slider-text-container">
+										<span class="offer-slider__subtitle text-uppercase">
+											Массажные кресла2
+										</span>
+										<h2 class="">Bodo ecto sport brown gold</h2>
+										<p class="offer-slider__text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+											sed do eiusmod tempor incididunt ut labore et dolore magna
+											aliqua. Ut enim ad minim veniam, quis
+										</p>
+									</div>
+
+									<img
+										src="img/offer-slide.png"
+										alt="Bodo ecto sport brown gold"
+										class="d-lg-none offer-slider-image-animation"
+									/>
+
+									<div
+										class="d-flex mt-2 mt-lg-auto mb-5 slider-btns-container"
+									>
+										<a
+											href="catalog.html"
+											class="offer-slider__btn btn btn-outline-info text-uppercase me-3 me-lg-5"
+										>
+											Подробнее
+										</a>
+										<button
+											class="offer-prev slider-prev"
+											type="button"
+										></button>
+										<button
+											class="offer-next slider-next"
+											type="button"
+										></button>
+									</div>
+								</div>
+								<div class="col-lg-6 offer-slider-image-container">
+									<img
+										src="img/offer-slide.png"
+										alt="Bodo ecto sport brown gold"
+										class="d-none d-lg-block"
+									/>
+								</div>
+							</div>
+
+							<div class="row">
+								<div
+									class="col-lg-5 d-flex flex-column text-white offer-slider-text-container"
+								>
+									<div class="slider-text-container">
+										<span class="offer-slider__subtitle text-uppercase">
+											Массажные кресла3
+										</span>
+										<h2 class="">Bodo ecto sport brown gold</h2>
+										<p class="offer-slider__text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+											sed do eiusmod tempor incididunt ut labore et dolore magna
+											aliqua. Ut enim ad minim veniam, quis
+										</p>
+									</div>
+
+									<img
+										src="img/offer-slide.png"
+										alt="Bodo ecto sport brown gold"
+										class="d-lg-none offer-slider-image-animation"
+									/>
+
+									<div
+										class="d-flex mt-2 mt-lg-auto mb-5 slider-btns-container"
+									>
+										<a
+											href="catalog.html"
+											class="offer-slider__btn btn btn-outline-info text-uppercase me-3 me-lg-5"
+										>
+											Подробнее
+										</a>
+										<button
+											class="offer-prev slider-prev"
+											type="button"
+										></button>
+										<button
+											class="offer-next slider-next"
+											type="button"
+										></button>
+									</div>
+								</div>
+								<div class="col-lg-6 offer-slider-image-container">
+									<img
+										src="img/offer-slide.png"
+										alt="Bodo ecto sport brown gold"
+										class="d-none d-lg-block"
+									/>
+								</div>
+							</div>
+
+							<div class="row">
+								<div
+									class="col-lg-5 d-flex flex-column text-white offer-slider-text-container"
+								>
+									<div class="slider-text-container">
+										<span class="offer-slider__subtitle text-uppercase">
+											Массажные кресла4
+										</span>
+										<h2 class="">Bodo ecto sport brown gold</h2>
+										<p class="offer-slider__text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+											sed do eiusmod tempor incididunt ut labore et dolore magna
+											aliqua. Ut enim ad minim veniam, quis
+										</p>
+									</div>
+
+									<img
+										src="img/offer-slide.png"
+										alt="Bodo ecto sport brown gold"
+										class="d-lg-none offer-slider-image-animation"
+									/>
+
+									<div
+										class="d-flex mt-2 mt-lg-auto mb-5 slider-btns-container"
+									>
+										<a
+											href="catalog.html"
+											class="offer-slider__btn btn btn-outline-info text-uppercase me-3 me-lg-5"
+										>
+											Подробнее
+										</a>
+										<button
+											class="offer-prev slider-prev"
+											type="button"
+										></button>
+										<button
+											class="offer-next slider-next"
+											type="button"
+										></button>
+									</div>
+								</div>
+								<div class="col-lg-6 offer-slider-image-container">
+									<img
+										src="img/offer-slide.png"
+										alt="Bodo ecto sport brown gold"
+										class="d-none d-lg-block"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="quality section" id="quality">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-6 d-flex align-items-center">
+								<img
+									class="quality-img ms-2 ms-lg-0 appearing-element-quality-block"
+									src="img/quality.jpg"
+									alt="Немецкое качество"
+								/>
+							</div>
+							<div class="col-lg-6 px-3 px-lg-5">
+								<img
+									class="quality-logo appearing-element-quality-block"
+									src="img/logo.png"
+									alt="Bodo"
+								/>
+								<h2 class="appearing-element-quality-block">
+									Немецкое <span class="d-lg-block">качество</span>
+								</h2>
+								<p class="appearing-element-quality-block">
+									Бренд массажного оборудования Bodo сочетает в себе немецкий
+									подход к качеству и надежности с самыми современными
+									технологиями массажа и лучшим дизайном в своём классе. Путь
+									кресел и массажеров Bodo начинается в Германии, где рождаются
+									технические решения и дизайн. Качество мирового уровня. Лучшие
+									технологии
+								</p>
+								<div
+									class="d-none d-lg-flex align-items-center justify-content-between appearing-element-quality-block"
+								>
+									<div class="more-arrow"></div>
+									<a href="about.html" class="more-btn text-uppercase me-5">
+										Подробнее
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="technologies section" id="technologies">
+					<div class="container">
+						<div
+							class="d-flex align-items-center justify-content-between appearing-element-technology-block"
+						>
+							<h2>Tехнологии <span>Bodo</span></h2>
+							<div class="d-none d-lg-flex">
+								<button
+									class="technologies-prev slider-prev"
+									type="button"
+								></button>
+								<button
+									class="technologies-next slider-next"
+									type="button"
+								></button>
+							</div>
+						</div>
+
+						<div class="product-mob d-lg-none">
+							<div class="d-flex justify-content-between">
+								<div
+									class="product-mob__cat appearing-element-technology-block-mobile"
+								>
+									<img src="img/technologies-1.png" alt="Bodo" />
+								</div>
+								<div
+									class="product-mob__cat appearing-element-technology-block-mobile"
+								>
+									<img src="img/technologies-2.png" alt="Bodo" />
+								</div>
+								<div
+									class="product-mob__cat appearing-element-technology-block-mobile"
+								>
+									<img src="img/technologies-3.png" alt="Bodo" />
+								</div>
+								<div
+									class="product-mob__cat appearing-element-technology-block-mobile"
+								>
+									<img src="img/technologies-4.png" alt="Bodo" />
+								</div>
+							</div>
+
+							<div class="d-flex overflow-auto mt-4">
+								<div
+									class="card position-relative appearing-element-technology-block-mobile"
+								>
+									<span class="text-uppercase"> Массажеры для ног </span>
+									<h5>Массажер для ног Bodo Dessan 3</h5>
+									<div class="product-slider__child">
+										<div>
+											<img
+												src="img/technologies-1.png"
+												alt="Массажер для ног Bodo Dessan 3"
+											/>
+										</div>
+										<div>
+											<img
+												src="img/technologies-1.png"
+												alt="Массажер для ног Bodo Dessan 3"
+											/>
+										</div>
+										<div>
+											<img
+												src="img/technologies-1.png"
+												alt="Массажер для ног Bodo Dessan 3"
+											/>
+										</div>
+									</div>
+									<div class="d-flex align-items-center mt-lg-4">
+										<div class="price">
+											35 000 ₽
+											<span class="d-block">45 000 ₽</span>
+										</div>
+										<a href="#" class="price-btn ms-auto">
+											<img src="img/icon/plus.svg" />
+										</a>
+									</div>
+									<p class="mt-3 d-none d-lg-block">
+										Роскошный массажер для ног, концепция элегантности и красоты
+									</p>
+									<div
+										class="d-none d-lg-flex align-items-center justify-content-between mt-4"
+									>
+										<div class="more-arrow"></div>
+										<a href="product.html" class="more-btn text-uppercase">
+											Подробнее
+										</a>
+									</div>
+								</div>
+
+								<div
+									class="card position-relative appearing-element-technology-block-mobile"
+								>
+									<span class="text-uppercase"> Массажные кресла </span>
+									<h5>Массажное кресло OHCO M.8 Pearl</h5>
+									<div class="product-slider__child">
+										<div>
+											<img
+												src="img/technologies-2.png"
+												alt="Массажное кресло OHCO M.8 Pearl"
+											/>
+										</div>
+										<div>
+											<img
+												src="img/technologies-2.png"
+												alt="Массажное кресло OHCO M.8 Pearl"
+											/>
+										</div>
+										<div>
+											<img
+												src="img/technologies-2.png"
+												alt="Массажное кресло OHCO M.8 Pearl"
+											/>
+										</div>
+									</div>
+									<div class="d-flex align-items-center mt-lg-4">
+										<div class="price">
+											395 000 ₽
+											<span class="d-block">465 000 ₽</span>
+										</div>
+										<a href="#" class="price-btn ms-auto">
+											<img src="img/icon/plus.svg" />
+										</a>
+									</div>
+									<p class="mt-3 d-none d-lg-block">
+										Роскошное массажное кресло, концепция элегантности и красоты
+									</p>
+									<div
+										class="d-none d-lg-flex align-items-center justify-content-between mt-4"
+									>
+										<div class="more-arrow"></div>
+										<a href="product.html" class="more-btn text-uppercase">
+											Подробнее
+										</a>
+									</div>
+								</div>
+
+								<div
+									class="card position-relative appearing-element-technology-block-mobile"
+								>
+									<span class="text-uppercase"> Массажеры для шеи и плеч </span>
+									<h5>Массажер для шеи и плеч Bodo Ivent</h5>
+									<div class="product-slider__child">
+										<div>
+											<img
+												src="img/technologies-3.png"
+												alt="Массажер для шеи и плеч Bodo Ivent"
+											/>
+										</div>
+										<div>
+											<img
+												src="img/technologies-3.png"
+												alt="Массажер для шеи и плеч Bodo Ivent"
+											/>
+										</div>
+										<div>
+											<img
+												src="img/technologies-3.png"
+												alt="Массажер для шеи и плеч Bodo Ivent"
+											/>
+										</div>
+									</div>
+									<div class="d-flex align-items-center mt-lg-4">
+										<div class="price">
+											395 000 ₽
+											<span class="d-block">465 000 ₽</span>
+										</div>
+										<a href="#" class="price-btn ms-auto">
+											<img src="img/icon/plus.svg" />
+										</a>
+									</div>
+									<p class="mt-3 d-none d-lg-block">
+										Роскошное массажное кресло, концепция элегантности и красоты
+									</p>
+									<div
+										class="d-none d-lg-flex align-items-center justify-content-between mt-4"
+									>
+										<div class="more-arrow"></div>
+										<a href="product.html" class="more-btn text-uppercase">
+											Подробнее
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row d-none d-lg-flex mt-5">
+							<div class="product-slider d-block col-9">
+								<div
+									class="card position-relative appearing-element-product-block"
+								>
+									<span class="text-uppercase"> Массажеры для ног </span>
+									<h5>Массажер для ног Bodo Dessan 3</h5>
+									<div class="product-slider__child">
+										<div>
+											<img
+												src="img/technologies-1.png"
+												alt="Массажер для ног Bodo Dessan 3"
+											/>
+										</div>
+										<div>
+											<img
+												src="img/technologies-1.png"
+												alt="Массажер для ног Bodo Dessan 3"
+											/>
+										</div>
+										<div>
+											<img
+												src="img/technologies-1.png"
+												alt="Массажер для ног Bodo Dessan 3"
+											/>
+										</div>
+									</div>
+									<div class="d-flex align-items-center mt-lg-4">
+										<div class="price">
+											35 000 ₽
+											<span class="d-block">45 000 ₽</span>
+										</div>
+										<a href="#" class="price-btn ms-auto">
+											<img src="img/icon/plus.svg" />
+										</a>
+									</div>
+									<p class="mt-3 d-none d-lg-block">
+										Роскошный массажер для ног, концепция элегантности и красоты
+									</p>
+									<div
+										class="d-none d-lg-flex align-items-center justify-content-between mt-4"
+									>
+										<div class="more-arrow"></div>
+										<a href="product.html" class="more-btn text-uppercase">
+											Подробнее
+										</a>
+									</div>
+								</div>
+
+								<div
+									class="card position-relative appearing-element-product-block"
+								>
+									<span class="text-uppercase"> Массажные кресла </span>
+									<h5>Массажное кресло OHCO M.8 Pearl</h5>
+									<div class="product-slider__child">
+										<div>
+											<img
+												src="img/technologies-2.png"
+												alt="Массажное кресло OHCO M.8 Pearl"
+											/>
+										</div>
+										<div>
+											<img
+												src="img/technologies-2.png"
+												alt="Массажное кресло OHCO M.8 Pearl"
+											/>
+										</div>
+										<div>
+											<img
+												src="img/technologies-2.png"
+												alt="Массажное кресло OHCO M.8 Pearl"
+											/>
+										</div>
+									</div>
+									<div class="d-flex align-items-center mt-lg-4">
+										<div class="price">
+											395 000 ₽
+											<span class="d-block">465 000 ₽</span>
+										</div>
+										<a href="#" class="price-btn ms-auto">
+											<img src="img/icon/plus.svg" />
+										</a>
+									</div>
+									<p class="mt-3 d-none d-lg-block">
+										Роскошное массажное кресло, концепция элегантности и красоты
+									</p>
+									<div
+										class="d-none d-lg-flex align-items-center justify-content-between mt-4"
+									>
+										<div class="more-arrow"></div>
+										<a href="product.html" class="more-btn text-uppercase">
+											Подробнее
+										</a>
+									</div>
+								</div>
+
+								<div
+									class="card position-relative appearing-element-product-block"
+								>
+									<span class="text-uppercase"> Массажеры для шеи и плеч </span>
+									<h5>Массажер для шеи и плеч Bodo Ivent</h5>
+									<div class="product-slider__child">
+										<div>
+											<img
+												src="img/technologies-3.png"
+												alt="Массажер для шеи и плеч Bodo Ivent"
+											/>
+										</div>
+										<div>
+											<img
+												src="img/technologies-3.png"
+												alt="Массажер для шеи и плеч Bodo Ivent"
+											/>
+										</div>
+										<div>
+											<img
+												src="img/technologies-3.png"
+												alt="Массажер для шеи и плеч Bodo Ivent"
+											/>
+										</div>
+									</div>
+									<div class="d-flex align-items-center mt-lg-4">
+										<div class="price">
+											395 000 ₽
+											<span class="d-block">465 000 ₽</span>
+										</div>
+										<a href="#" class="price-btn ms-auto">
+											<img src="img/icon/plus.svg" />
+										</a>
+									</div>
+									<p class="mt-3 d-none d-lg-block">
+										Роскошное массажное кресло, концепция элегантности и красоты
+									</p>
+									<div
+										class="d-none d-lg-flex align-items-center justify-content-between mt-4"
+									>
+										<div class="more-arrow"></div>
+										<a href="product.html" class="more-btn text-uppercase">
+											Подробнее
+										</a>
+									</div>
+								</div>
+
+								<div
+									class="card position-relative appearing-element-product-block"
+								>
+									<span class="text-uppercase"> Массажные кресла </span>
+									<h5>Массажное кресло OHCO M.8 Pearl</h5>
+									<div class="product-slider__child">
+										<div>
+											<img
+												src="img/technologies-2.png"
+												alt="Массажное кресло OHCO M.8 Pearl"
+											/>
+										</div>
+										<div>
+											<img
+												src="img/technologies-2.png"
+												alt="Массажное кресло OHCO M.8 Pearl"
+											/>
+										</div>
+										<div>
+											<img
+												src="img/technologies-2.png"
+												alt="Массажное кресло OHCO M.8 Pearl"
+											/>
+										</div>
+									</div>
+									<div class="d-flex align-items-center mt-lg-4">
+										<div class="price">
+											395 000 ₽
+											<span class="d-block">465 000 ₽</span>
+										</div>
+										<a href="#" class="price-btn ms-auto">
+											<img src="img/icon/plus.svg" />
+										</a>
+									</div>
+									<p class="mt-3 d-none d-lg-block">
+										Роскошное массажное кресло, концепция элегантности и красоты
+									</p>
+									<div
+										class="d-none d-lg-flex align-items-center justify-content-between mt-4"
+									>
+										<div class="more-arrow"></div>
+										<a href="product.html" class="more-btn text-uppercase">
+											Подробнее
+										</a>
+									</div>
+								</div>
+							</div>
+							<div
+								class="card d-block position-relative col-3 appearing-element-product-block"
+							>
+								<span class="text-uppercase"> Массажеры для ног </span>
+								<h5>Массажер для ног Bodo Dessan 3</h5>
+								<div class="product-slider__child">
+									<div>
+										<img
+											src="img/technologies-1.png"
+											alt="Массажер для ног Bodo Dessan 3"
+										/>
+									</div>
+									<div>
+										<img
+											src="img/technologies-1.png"
+											alt="Массажер для ног Bodo Dessan 3"
+										/>
+									</div>
+									<div>
+										<img
+											src="img/technologies-1.png"
+											alt="Массажер для ног Bodo Dessan 3"
+										/>
+									</div>
+								</div>
+								<div class="d-flex align-items-center mt-lg-4">
+									<div class="price">
+										35 000 ₽
+										<span class="d-block">45 000 ₽</span>
+									</div>
+									<a href="#" class="price-btn ms-auto">
+										<img src="img/icon/plus.svg" />
+									</a>
+								</div>
+								<p class="mt-3 d-none d-lg-block">
+									Роскошный массажер для ног, концепция элегантности и красоты
+								</p>
+								<div
+									class="d-none d-lg-flex align-items-center justify-content-between mt-4"
+								>
+									<div class="more-arrow"></div>
+									<a href="product.html" class="more-btn text-uppercase">
+										Подробнее
+									</a>
+								</div>
+
+								<ul class="product-menu position-absolute">
+									<li class="product-menu__item">
+										<a
+											href="catalog.html"
+											class="product-menu__link text-white"
+										>
+											Все массажные кресла
+										</a>
+									</li>
+									<li class="product-menu__item">
+										<a
+											href="catalog.html"
+											class="product-menu__link text-white"
+										>
+											Все массажные столы и стулья
+										</a>
+									</li>
+									<li class="product-menu__item">
+										<a
+											href="catalog.html"
+											class="product-menu__link text-white"
+										>
+											Все массажеры для тела
+										</a>
+									</li>
+									<li class="product-menu__item">
+										<a
+											href="catalog.html"
+											class="product-menu__link text-white"
+										>
+											Все массажеры для ног
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="main-catalog section" id="main-catalog">
+					<div class="container">
+						<h2 class="appearing-element-catalog-block">
+							<span>Каталог</span> товаров
+						</h2>
+						<div class="row">
+							<div class="col-lg-6 appearing-element-catalog-block">
+								<a
+									href="catalog.html"
+									class="card d-flex flex-column position-relative overflow-hidden"
+								>
+									<img
+										src="img/main-catalog-1.png"
+										alt="Массажные кресла"
+										class="position-absolute"
+									/>
+									<h4 class="mt-auto">Массажные кресла</h4>
+									<div
+										class="d-flex align-items-center justify-content-between mt-3"
+									>
+										<div class="more-arrow"></div>
+										<span href="catalog.html" class="more-btn text-uppercase">
+											Подробнее
+										</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-lg-3 appearing-element-catalog-block">
+								<a href="catalog.html" class="card d-flex flex-column">
+									<div
+										class="d-flex align-items-center justify-content-center h-100 mb-2"
+									>
+										<img src="img/main-catalog-2.png" alt="Массажные накидки" />
+									</div>
+									<h4 class="mt-auto">Массажные накидки</h4>
+									<div
+										class="d-flex align-items-center justify-content-between mt-3"
+									>
+										<div class="more-arrow"></div>
+										<span href="catalog.html" class="more-btn text-uppercase">
+											Подробнее
+										</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-lg-3 appearing-element-catalog-block">
+								<a href="catalog.html" class="card d-flex flex-column">
+									<div
+										class="d-flex align-items-center justify-content-center h-100 mb-2"
+									>
+										<img
+											src="img/main-catalog-3.png"
+											alt="Массажеры  для шеи и плеч"
+										/>
+									</div>
+									<h4 class="mt-auto">Массажеры для шеи и плеч</h4>
+									<div
+										class="d-flex align-items-center justify-content-between mt-3"
+									>
+										<div class="more-arrow"></div>
+										<span href="catalog.html" class="more-btn text-uppercase">
+											Подробнее
+										</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-lg-3 appearing-element-catalog-block">
+								<a href="catalog.html" class="card d-flex flex-column">
+									<div
+										class="d-flex align-items-center justify-content-center h-100 mb-2"
+									>
+										<img src="img/main-catalog-4.png" alt="Массажер для тела" />
+									</div>
+									<h4 class="mt-auto">Массажер для тела</h4>
+									<div
+										class="d-flex align-items-center justify-content-between mt-3"
+									>
+										<div class="more-arrow"></div>
+										<span href="catalog.html" class="more-btn text-uppercase">
+											Подробнее
+										</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-lg-3 appearing-element-catalog-block">
+								<a href="catalog.html" class="card d-flex flex-column">
+									<div
+										class="d-flex align-items-center justify-content-center h-100 mb-2"
+									>
+										<img src="img/main-catalog-5.png" alt="Массажер для ног" />
+									</div>
+									<h4 class="mt-auto">Массажер для ног</h4>
+									<div
+										class="d-flex align-items-center justify-content-between mt-3"
+									>
+										<div class="more-arrow"></div>
+										<span href="catalog.html" class="more-btn text-uppercase">
+											Подробнее
+										</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-lg-6 appearing-element-catalog-block">
+								<a
+									href="catalog.html"
+									class="card card-img d-flex flex-column position-relative overflow-hidden"
+								>
+									<img
+										src="img/main-catalog-6.jpg"
+										alt="Массажные столы и стулья"
+										class="position-absolute"
+									/>
+									<h4 class="mt-auto">Массажные столы и стулья</h4>
+									<div
+										class="d-flex align-items-center justify-content-between mt-3"
+									>
+										<div class="more-arrow"></div>
+										<span href="catalog.html" class="more-btn text-uppercase">
+											Подробнее
+										</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-6 d-lg-none appearing-element-catalog-block">
+								<a
+									href="sale.html"
+									class="card d-flex flex-column overflow-hidden"
+								>
+									<div
+										class="info-icon d-flex justify-content-center align-items-center m-auto"
+									>
+										<img src="img/icon/sale.svg" alt="Распродажа" />
+									</div>
+									<h4 class="text-white text-center text-lg-start mt-auto">
+										Распродажа
+									</h4>
+								</a>
+							</div>
+							<div class="col-6 d-lg-none appearing-element-catalog-block">
+								<a
+									href="stock.html"
+									class="card d-flex flex-column overflow-hidden"
+								>
+									<div
+										class="info-icon d-flex justify-content-center align-items-center m-auto"
+									>
+										<img src="img/icon/stock.svg" alt="Акции" />
+									</div>
+									<h4 class="text-white text-center text-lg-start mt-auto">
+										Акции
+									</h4>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="shops section" id="shops">
+					<div class="container">
+						<h2 class="appearing-element-shops-block">
+							Наши <span>магазины</span>
+						</h2>
+						<div class="subtitle appearing-element-shops-block">
+							Наши магазины-салоны в Германии, Австрии и России
+						</div>
+						<div class="map-wrapper appearing-element-shops-map-block">
+							<div class="russian-map-wrapper">
+								<img class="russia-map-image" src="img/russia-map.png" alt="" />
+
+								<div class="points-wrapper">
+									<svg
+										id="svg-map"
+										class="points-svg-wrapper"
+										viewBox="0 0 772 444"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											opacity="0.4"
+											d="M568 338.391C579.167 334.058 599.8 322.091 593 308.891C584.5 292.391 570.5 333.391 568 338.391Z"
+											fill="url(#paint0_linear_0_1)"
+										/>
+										<path
+											d="M568 336.12C562.916 331.694 559.127 327.621 556.589 323.903C553.889 319.949 552.65 316.457 552.65 313.393C552.65 308.49 554.213 304.726 557.246 301.932C560.366 299.059 563.928 297.65 567.995 297.65C572.062 297.65 575.627 299.059 578.75 301.933C581.786 304.727 583.35 308.491 583.35 313.393C583.35 316.457 582.111 319.949 579.411 323.903C576.873 327.621 573.084 331.694 568 336.12Z"
+											fill="white"
+											stroke="#098B93"
+											stroke-width="3"
+											class="point-image"
+										/>
+
+										<path
+											opacity="0.4"
+											d="M625 250.391C636.167 246.058 656.8 234.091 650 220.891C641.5 204.391 627.5 245.391 625 250.391Z"
+											fill="url(#paint1_linear_0_1)"
+										/>
+										<path
+											d="M625 251.12C619.916 246.694 616.127 242.621 613.589 238.903C610.889 234.949 609.65 231.457 609.65 228.393C609.65 223.49 611.213 219.726 614.246 216.932C617.366 214.059 620.928 212.65 624.995 212.65C629.062 212.65 632.627 214.059 635.75 216.933C638.786 219.727 640.35 223.491 640.35 228.393C640.35 231.457 639.111 234.949 636.411 238.903C633.873 242.621 630.084 246.694 625 251.12Z"
+											fill="white"
+											stroke="#098B93"
+											stroke-width="3"
+											class="point-image"
+										/>
+
+										<path
+											opacity="0.4"
+											d="M608 176.391C619.167 172.058 639.8 160.091 633 146.891C624.5 130.391 610.5 171.391 608 176.391Z"
+											fill="url(#paint2_linear_0_1)"
+										/>
+										<path
+											d="M608 174.12C602.916 169.694 599.127 165.621 596.589 161.903C593.889 157.949 592.65 154.457 592.65 151.393C592.65 146.49 594.213 142.726 597.246 139.932C600.366 137.059 603.928 135.65 607.995 135.65C612.062 135.65 615.627 137.059 618.75 139.933C621.786 142.727 623.35 146.491 623.35 151.393C623.35 154.457 622.111 157.949 619.411 161.903C616.873 165.621 613.084 169.694 608 174.12Z"
+											fill="white"
+											stroke="#098B93"
+											stroke-width="3"
+											class="point-image"
+										/>
+
+										<path
+											opacity="0.4"
+											d="M666 99.3913C677.167 95.058 697.8 83.0913 691 69.8913C682.5 53.3913 668.5 94.3913 666 99.3913Z"
+											fill="url(#paint3_linear_0_1)"
+										/>
+										<path
+											d="M666 97.1205C660.916 92.694 657.127 88.621 654.589 84.9034C651.889 80.9493 650.65 77.4574 650.65 74.3935C650.65 69.4901 652.213 65.7259 655.246 62.9322C658.366 60.0587 661.928 58.65 665.995 58.65C670.062 58.65 673.627 60.0588 676.75 62.9327C679.786 65.7265 681.35 69.4905 681.35 74.3935C681.35 77.4574 680.111 80.9493 677.411 84.9034C674.873 88.621 671.084 92.694 666 97.1205Z"
+											fill="white"
+											stroke="#098B93"
+											stroke-width="3"
+											class="point-image"
+										/>
+										<path
+											opacity="0.4"
+											d="M568 54.3913C579.167 50.058 599.8 38.0913 593 24.8913C584.5 8.39129 570.5 49.3913 568 54.3913Z"
+											fill="url(#paint4_linear_0_1)"
+										/>
+										<path
+											d="M568 52.1205C562.916 47.694 559.127 43.621 556.589 39.9034C553.889 35.9493 552.65 32.4574 552.65 29.3935C552.65 24.4901 554.213 20.7259 557.246 17.9322C560.366 15.0587 563.928 13.65 567.995 13.65C572.062 13.65 575.627 15.0588 578.75 17.9327C581.786 20.7265 583.35 24.4905 583.35 29.3935C583.35 32.4574 582.111 35.9493 579.411 39.9034C576.873 43.621 573.084 47.694 568 52.1205Z"
+											fill="white"
+											stroke="#098B93"
+											stroke-width="3"
+											class="point-image"
+										/>
+										<path
+											opacity="0.4"
+											d="M738 131.391C749.167 127.058 769.8 115.091 763 101.891C754.5 85.3913 740.5 126.391 738 131.391Z"
+											fill="url(#paint5_linear_0_1)"
+										/>
+										<path
+											d="M738 129.12C732.916 124.694 729.127 120.621 726.589 116.903C723.889 112.949 722.65 109.457 722.65 106.393C722.65 101.49 724.213 97.7259 727.246 94.9322C730.366 92.0587 733.928 90.65 737.995 90.65C742.062 90.65 745.627 92.0588 748.75 94.9327C751.786 97.7265 753.35 101.491 753.35 106.393C753.35 109.457 752.111 112.949 749.411 116.903C746.873 120.621 743.084 124.694 738 129.12Z"
+											fill="white"
+											stroke="#098B93"
+											stroke-width="3"
+											class="point-image"
+										/>
+										<path
+											opacity="0.4"
+											d="M745 42.3913C756.167 38.058 776.8 26.0913 770 12.8913C761.5 -3.60871 747.5 37.3913 745 42.3913Z"
+											fill="url(#paint6_linear_0_1)"
+										/>
+										<path
+											d="M745 40.1205C739.916 35.694 736.127 31.621 733.589 27.9034C730.889 23.9493 729.65 20.4574 729.65 17.3935C729.65 12.4901 731.213 8.72594 734.246 5.93219C737.366 3.05874 740.928 1.65002 744.995 1.65002C749.062 1.65002 752.627 3.05879 755.75 5.93265C758.786 8.72652 760.35 12.4905 760.35 17.3935C760.35 20.4574 759.111 23.9493 756.411 27.9034C753.873 31.621 750.084 35.694 745 40.1205Z"
+											fill="white"
+											stroke="#098B93"
+											stroke-width="3"
+											class="point-image"
+										/>
+										<path
+											opacity="0.4"
+											d="M451 257.391C462.167 253.058 482.8 241.091 476 227.891C467.5 211.391 453.5 252.391 451 257.391Z"
+											fill="url(#paint7_linear_0_1)"
+										/>
+										<path
+											d="M451 255.12C445.916 250.694 442.127 246.621 439.589 242.903C436.889 238.949 435.65 235.457 435.65 232.393C435.65 227.49 437.213 223.726 440.246 220.932C443.366 218.059 446.928 216.65 450.995 216.65C455.062 216.65 458.627 218.059 461.75 220.933C464.786 223.727 466.35 227.491 466.35 232.393C466.35 235.457 465.111 238.949 462.411 242.903C459.873 246.621 456.084 250.694 451 255.12Z"
+											fill="white"
+											stroke="#098B93"
+											stroke-width="3"
+											class="point-image"
+										/>
+										<path
+											opacity="0.4"
+											d="M356 440.391C367.167 436.058 387.8 424.091 381 410.891C372.5 394.391 358.5 435.391 356 440.391Z"
+											fill="url(#paint8_linear_0_1)"
+										/>
+										<path
+											d="M356 438.12C350.916 433.694 347.127 429.621 344.589 425.903C341.889 421.949 340.65 418.457 340.65 415.393C340.65 410.49 342.213 406.726 345.246 403.932C348.366 401.059 351.928 399.65 355.995 399.65C360.062 399.65 363.627 401.059 366.75 403.933C369.786 406.727 371.35 410.491 371.35 415.393C371.35 418.457 370.111 421.949 367.411 425.903C364.873 429.621 361.084 433.694 356 438.12Z"
+											fill="white"
+											stroke="#098B93"
+											stroke-width="3"
+											class="point-image"
+										/>
+										<path
+											opacity="0.4"
+											d="M497 345.391C508.167 341.058 528.8 329.091 522 315.891C513.5 299.391 499.5 340.391 497 345.391Z"
+											fill="url(#paint9_linear_0_1)"
+										/>
+										<path
+											d="M497 343.12C491.916 338.694 488.127 334.621 485.589 330.903C482.889 326.949 481.65 323.457 481.65 320.393C481.65 315.49 483.213 311.726 486.246 308.932C489.366 306.059 492.928 304.65 496.995 304.65C501.062 304.65 504.627 306.059 507.75 308.933C510.786 311.727 512.35 315.491 512.35 320.393C512.35 323.457 511.111 326.949 508.411 330.903C505.873 334.621 502.084 338.694 497 343.12Z"
+											fill="white"
+											stroke="#098B93"
+											stroke-width="3"
+											class="point-image"
+										/>
+										<path
+											opacity="0.4"
+											d="M158 336.391C169.167 332.058 189.8 320.091 183 306.891C174.5 290.391 160.5 331.391 158 336.391Z"
+											fill="url(#paint10_linear_0_1)"
+										/>
+										<path
+											d="M158 334.12C152.916 329.694 149.127 325.621 146.589 321.903C143.889 317.949 142.65 314.457 142.65 311.393C142.65 306.49 144.213 302.726 147.246 299.932C150.366 297.059 153.928 295.65 157.995 295.65C162.062 295.65 165.627 297.059 168.75 299.933C171.786 302.727 173.35 306.491 173.35 311.393C173.35 314.457 172.111 317.949 169.411 321.903C166.873 325.621 163.084 329.694 158 334.12Z"
+											fill="white"
+											stroke="#098B93"
+											stroke-width="3"
+											class="point-image"
+										/>
+										<path
+											opacity="0.4"
+											d="M17 345.391C28.1667 341.058 48.8 329.091 42 315.891C33.5 299.391 19.5 340.391 17 345.391Z"
+											fill="url(#paint11_linear_0_1)"
+										/>
+										<path
+											d="M17 343.12C11.9158 338.694 8.12726 334.621 5.58875 330.903C2.88871 326.949 1.65 323.457 1.65 320.393C1.65 315.49 3.21295 311.726 6.24616 308.932C9.36594 306.059 12.9284 304.65 16.9954 304.65C21.0625 304.65 24.6267 306.059 27.7497 308.933C30.7858 311.727 32.35 315.491 32.35 320.393C32.35 323.457 31.1113 326.949 28.4113 330.903C25.8727 334.621 22.0842 338.694 17 343.12Z"
+											fill="white"
+											stroke="#098B93"
+											stroke-width="3"
+											class="point-image"
+										/>
+										<path
+											opacity="0.4"
+											d="M45 393.391C56.1667 389.058 76.8 377.091 70 363.891C61.5 347.391 47.5 388.391 45 393.391Z"
+											fill="url(#paint12_linear_0_1)"
+										/>
+										<path
+											d="M45 391.12C39.9158 386.694 36.1273 382.621 33.5888 378.903C30.8887 374.949 29.65 371.457 29.65 368.393C29.65 363.49 31.213 359.726 34.2462 356.932C37.3659 354.059 40.9284 352.65 44.9954 352.65C49.0625 352.65 52.6267 354.059 55.7497 356.933C58.7858 359.727 60.35 363.491 60.35 368.393C60.35 371.457 59.1113 374.949 56.4113 378.903C53.8727 382.621 50.0842 386.694 45 391.12Z"
+											fill="white"
+											stroke="#098B93"
+											stroke-width="3"
+											class="point-image"
+										/>
+										<path
+											opacity="0.4"
+											d="M237 308.391C248.167 304.058 268.8 292.091 262 278.891C253.5 262.391 239.5 303.391 237 308.391Z"
+											fill="url(#paint13_linear_0_1)"
+										/>
+										<path
+											d="M237 306.12C231.916 301.694 228.127 297.621 225.589 293.903C222.889 289.949 221.65 286.457 221.65 283.393C221.65 278.49 223.213 274.726 226.246 271.932C229.366 269.059 232.928 267.65 236.995 267.65C241.062 267.65 244.627 269.059 247.75 271.933C250.786 274.727 252.35 278.491 252.35 283.393C252.35 286.457 251.111 289.949 248.411 293.903C245.873 297.621 242.084 301.694 237 306.12Z"
+											fill="white"
+											stroke="#098B93"
+											stroke-width="3"
+											class="point-image"
+										/>
+										<path
+											opacity="0.4"
+											d="M208 353.391C219.167 349.058 239.8 337.091 233 323.891C224.5 307.391 210.5 348.391 208 353.391Z"
+											fill="url(#paint14_linear_0_1)"
+										/>
+										<path
+											d="M208 351.12C202.916 346.694 199.127 342.621 196.589 338.903C193.889 334.949 192.65 331.457 192.65 328.393C192.65 323.49 194.213 319.726 197.246 316.932C200.366 314.059 203.928 312.65 207.995 312.65C212.062 312.65 215.627 314.059 218.75 316.933C221.786 319.727 223.35 323.491 223.35 328.393C223.35 331.457 222.111 334.949 219.411 338.903C216.873 342.621 213.084 346.694 208 351.12Z"
+											fill="white"
+											stroke="#098B93"
+											stroke-width="3"
+											class="point-image"
+										/>
+										<path
+											opacity="0.4"
+											d="M349 377.391C360.167 373.058 380.8 361.091 374 347.891C365.5 331.391 351.5 372.391 349 377.391Z"
+											fill="url(#paint15_linear_0_1)"
+										/>
+										<path
+											d="M349 375.12C343.916 370.694 340.127 366.621 337.589 362.903C334.889 358.949 333.65 355.457 333.65 352.393C333.65 347.49 335.213 343.726 338.246 340.932C341.366 338.059 344.928 336.65 348.995 336.65C353.062 336.65 356.627 338.059 359.75 340.933C362.786 343.727 364.35 347.491 364.35 352.393C364.35 355.457 363.111 358.949 360.411 362.903C357.873 366.621 354.084 370.694 349 375.12Z"
+											fill="white"
+											stroke="#098B93"
+											stroke-width="3"
+											class="point-image"
+										/>
+										<path
+											opacity="0.4"
+											d="M340 304.391C351.167 300.058 371.8 288.091 365 274.891C356.5 258.391 342.5 299.391 340 304.391Z"
+											fill="url(#paint16_linear_0_1)"
+										/>
+										<path
+											d="M340 302.12C334.916 297.694 331.127 293.621 328.589 289.903C325.889 285.949 324.65 282.457 324.65 279.393C324.65 274.49 326.213 270.726 329.246 267.932C332.366 265.059 335.928 263.65 339.995 263.65C344.062 263.65 347.627 265.059 350.75 267.933C353.786 270.727 355.35 274.491 355.35 279.393C355.35 282.457 354.111 285.949 351.411 289.903C348.873 293.621 345.084 297.694 340 302.12Z"
+											fill="white"
+											stroke="#098B93"
+											stroke-width="3"
+											class="point-image"
+										/>
+										<path
+											opacity="0.4"
+											d="M490 401.391C501.167 397.058 521.8 385.091 515 371.891C506.5 355.391 492.5 396.391 490 401.391Z"
+											fill="url(#paint17_linear_0_1)"
+										/>
+										<path
+											d="M490 399.12C484.916 394.694 481.127 390.621 478.589 386.903C475.889 382.949 474.65 379.457 474.65 376.393C474.65 371.49 476.213 367.726 479.246 364.932C482.366 362.059 485.928 360.65 489.995 360.65C494.062 360.65 497.627 362.059 500.75 364.933C503.786 367.727 505.35 371.491 505.35 376.393C505.35 379.457 504.111 382.949 501.411 386.903C498.873 390.621 495.084 394.694 490 399.12Z"
+											fill="white"
+											stroke="#098B93"
+											stroke-width="3"
+											class="point-image"
+										/>
+										<path
+											opacity="0.4"
+											d="M518 297.391C529.167 293.058 549.8 281.091 543 267.891C534.5 251.391 520.5 292.391 518 297.391Z"
+											fill="url(#paint18_linear_0_1)"
+										/>
+										<path
+											d="M518 295.12C512.916 290.694 509.127 286.621 506.589 282.903C503.889 278.949 502.65 275.457 502.65 272.393C502.65 267.49 504.213 263.726 507.246 260.932C510.366 258.059 513.928 256.65 517.995 256.65C522.062 256.65 525.627 258.059 528.75 260.933C531.786 263.727 533.35 267.491 533.35 272.393C533.35 275.457 532.111 278.949 529.411 282.903C526.873 286.621 523.084 290.694 518 295.12Z"
+											fill="white"
+											stroke="#098B93"
+											stroke-width="3"
+											class="point-image"
+										/>
+										<path
+											opacity="0.4"
+											d="M537 443.391C548.167 439.058 568.8 427.091 562 413.891C553.5 397.391 539.5 438.391 537 443.391Z"
+											fill="url(#paint19_linear_0_1)"
+										/>
+										<path
+											d="M537 441.12C531.916 436.694 528.127 432.621 525.589 428.903C522.889 424.949 521.65 421.457 521.65 418.393C521.65 413.49 523.213 409.726 526.246 406.932C529.366 404.059 532.928 402.65 536.995 402.65C541.062 402.65 544.627 404.059 547.75 406.933C550.786 409.727 552.35 413.491 552.35 418.393C552.35 421.457 551.111 424.949 548.411 428.903C545.873 432.621 542.084 436.694 537 441.12Z"
+											fill="white"
+											stroke="#098B93"
+											stroke-width="3"
+											class="point-image"
+										/>
+										<path
+											opacity="0.4"
+											d="M656 224.391C667.167 220.058 687.8 208.091 681 194.891C672.5 178.391 658.5 219.391 656 224.391Z"
+											fill="url(#paint20_linear_0_1)"
+										/>
+										<path
+											d="M656 222.12C650.916 217.694 647.127 213.621 644.589 209.903C641.889 205.949 640.65 202.457 640.65 199.393C640.65 194.49 642.213 190.726 645.246 187.932C648.366 185.059 651.928 183.65 655.995 183.65C660.062 183.65 663.627 185.059 666.75 187.933C669.786 190.727 671.35 194.491 671.35 199.393C671.35 202.457 670.111 205.949 667.411 209.903C664.873 213.621 661.084 217.694 656 222.12Z"
+											fill="white"
+											stroke="#098B93"
+											stroke-width="3"
+											class="point-image"
+										/>
+										<path
+											opacity="0.4"
+											d="M648 315.391C659.167 311.058 679.8 299.091 673 285.891C664.5 269.391 650.5 310.391 648 315.391Z"
+											fill="url(#paint21_linear_0_1)"
+										/>
+										<path
+											d="M648 313.12C642.916 308.694 639.127 304.621 636.589 300.903C633.889 296.949 632.65 293.457 632.65 290.393C632.65 285.49 634.213 281.726 637.246 278.932C640.366 276.059 643.928 274.65 647.995 274.65C652.062 274.65 655.627 276.059 658.75 278.933C661.786 281.727 663.35 285.491 663.35 290.393C663.35 293.457 662.111 296.949 659.411 300.903C656.873 304.621 653.084 308.694 648 313.12Z"
+											fill="white"
+											stroke="#098B93"
+											stroke-width="3"
+											class="point-image"
+										/>
+										<path
+											opacity="0.4"
+											d="M535 157.391C546.167 153.058 566.8 141.091 560 127.891C551.5 111.391 537.5 152.391 535 157.391Z"
+											fill="url(#paint22_linear_0_1)"
+											style="opacity: 1"
+										/>
+										<path
+											d="M535 155.12C529.916 150.694 526.127 146.621 523.589 142.903C520.889 138.949 519.65 135.457 519.65 132.393C519.65 127.49 521.213 123.726 524.246 120.932C527.366 118.059 530.928 116.65 534.995 116.65C539.062 116.65 542.627 118.059 545.75 120.933C548.786 123.727 550.35 127.491 550.35 132.393C550.35 135.457 549.111 138.949 546.411 142.903C543.873 146.621 540.084 150.694 535 155.12Z"
+											fill="#098B93"
+											stroke="white"
+											stroke-width="3"
+										/>
+										<image
+											href="img/point-logo-moscow.png"
+											x="525"
+											y="123"
+											width="20"
+											height="20"
+										></image>
+										<defs>
+											<linearGradient
+												id="paint0_linear_0_1"
+												x1="592.5"
+												y1="306.5"
+												x2="569.5"
+												y2="337"
+												gradientUnits="userSpaceOnUse"
+											>
+												<stop stop-color="#0D0D0D" stop-opacity="0" />
+												<stop offset="1" stop-color="#0D0D0D" />
+											</linearGradient>
+											<linearGradient
+												id="paint1_linear_0_1"
+												x1="649.5"
+												y1="218.5"
+												x2="626.5"
+												y2="249"
+												gradientUnits="userSpaceOnUse"
+											>
+												<stop stop-color="#0D0D0D" stop-opacity="0" />
+												<stop offset="1" stop-color="#0D0D0D" />
+											</linearGradient>
+											<linearGradient
+												id="paint2_linear_0_1"
+												x1="632.5"
+												y1="144.5"
+												x2="609.5"
+												y2="175"
+												gradientUnits="userSpaceOnUse"
+											>
+												<stop stop-color="#0D0D0D" stop-opacity="0" />
+												<stop offset="1" stop-color="#0D0D0D" />
+											</linearGradient>
+											<linearGradient
+												id="paint3_linear_0_1"
+												x1="690.5"
+												y1="67.5"
+												x2="667.5"
+												y2="98"
+												gradientUnits="userSpaceOnUse"
+											>
+												<stop stop-color="#0D0D0D" stop-opacity="0" />
+												<stop offset="1" stop-color="#0D0D0D" />
+											</linearGradient>
+											<linearGradient
+												id="paint4_linear_0_1"
+												x1="592.5"
+												y1="22.5"
+												x2="569.5"
+												y2="53"
+												gradientUnits="userSpaceOnUse"
+											>
+												<stop stop-color="#0D0D0D" stop-opacity="0" />
+												<stop offset="1" stop-color="#0D0D0D" />
+											</linearGradient>
+											<linearGradient
+												id="paint5_linear_0_1"
+												x1="762.5"
+												y1="99.5"
+												x2="739.5"
+												y2="130"
+												gradientUnits="userSpaceOnUse"
+											>
+												<stop stop-color="#0D0D0D" stop-opacity="0" />
+												<stop offset="1" stop-color="#0D0D0D" />
+											</linearGradient>
+											<linearGradient
+												id="paint6_linear_0_1"
+												x1="769.5"
+												y1="10.5"
+												x2="746.5"
+												y2="41"
+												gradientUnits="userSpaceOnUse"
+											>
+												<stop stop-color="#0D0D0D" stop-opacity="0" />
+												<stop offset="1" stop-color="#0D0D0D" />
+											</linearGradient>
+											<linearGradient
+												id="paint7_linear_0_1"
+												x1="475.5"
+												y1="225.5"
+												x2="452.5"
+												y2="256"
+												gradientUnits="userSpaceOnUse"
+											>
+												<stop stop-color="#0D0D0D" stop-opacity="0" />
+												<stop offset="1" stop-color="#0D0D0D" />
+											</linearGradient>
+											<linearGradient
+												id="paint8_linear_0_1"
+												x1="380.5"
+												y1="408.5"
+												x2="357.5"
+												y2="439"
+												gradientUnits="userSpaceOnUse"
+											>
+												<stop stop-color="#0D0D0D" stop-opacity="0" />
+												<stop offset="1" stop-color="#0D0D0D" />
+											</linearGradient>
+											<linearGradient
+												id="paint9_linear_0_1"
+												x1="521.5"
+												y1="313.5"
+												x2="498.5"
+												y2="344"
+												gradientUnits="userSpaceOnUse"
+											>
+												<stop stop-color="#0D0D0D" stop-opacity="0" />
+												<stop offset="1" stop-color="#0D0D0D" />
+											</linearGradient>
+											<linearGradient
+												id="paint10_linear_0_1"
+												x1="182.5"
+												y1="304.5"
+												x2="159.5"
+												y2="335"
+												gradientUnits="userSpaceOnUse"
+											>
+												<stop stop-color="#0D0D0D" stop-opacity="0" />
+												<stop offset="1" stop-color="#0D0D0D" />
+											</linearGradient>
+											<linearGradient
+												id="paint11_linear_0_1"
+												x1="41.5"
+												y1="313.5"
+												x2="18.5"
+												y2="344"
+												gradientUnits="userSpaceOnUse"
+											>
+												<stop stop-color="#0D0D0D" stop-opacity="0" />
+												<stop offset="1" stop-color="#0D0D0D" />
+											</linearGradient>
+											<linearGradient
+												id="paint12_linear_0_1"
+												x1="69.5"
+												y1="361.5"
+												x2="46.5"
+												y2="392"
+												gradientUnits="userSpaceOnUse"
+											>
+												<stop stop-color="#0D0D0D" stop-opacity="0" />
+												<stop offset="1" stop-color="#0D0D0D" />
+											</linearGradient>
+											<linearGradient
+												id="paint13_linear_0_1"
+												x1="261.5"
+												y1="276.5"
+												x2="238.5"
+												y2="307"
+												gradientUnits="userSpaceOnUse"
+											>
+												<stop stop-color="#0D0D0D" stop-opacity="0" />
+												<stop offset="1" stop-color="#0D0D0D" />
+											</linearGradient>
+											<linearGradient
+												id="paint14_linear_0_1"
+												x1="232.5"
+												y1="321.5"
+												x2="209.5"
+												y2="352"
+												gradientUnits="userSpaceOnUse"
+											>
+												<stop stop-color="#0D0D0D" stop-opacity="0" />
+												<stop offset="1" stop-color="#0D0D0D" />
+											</linearGradient>
+											<linearGradient
+												id="paint15_linear_0_1"
+												x1="373.5"
+												y1="345.5"
+												x2="350.5"
+												y2="376"
+												gradientUnits="userSpaceOnUse"
+											>
+												<stop stop-color="#0D0D0D" stop-opacity="0" />
+												<stop offset="1" stop-color="#0D0D0D" />
+											</linearGradient>
+											<linearGradient
+												id="paint16_linear_0_1"
+												x1="364.5"
+												y1="272.5"
+												x2="341.5"
+												y2="303"
+												gradientUnits="userSpaceOnUse"
+											>
+												<stop stop-color="#0D0D0D" stop-opacity="0" />
+												<stop offset="1" stop-color="#0D0D0D" />
+											</linearGradient>
+											<linearGradient
+												id="paint17_linear_0_1"
+												x1="514.5"
+												y1="369.5"
+												x2="491.5"
+												y2="400"
+												gradientUnits="userSpaceOnUse"
+											>
+												<stop stop-color="#0D0D0D" stop-opacity="0" />
+												<stop offset="1" stop-color="#0D0D0D" />
+											</linearGradient>
+											<linearGradient
+												id="paint18_linear_0_1"
+												x1="542.5"
+												y1="265.5"
+												x2="519.5"
+												y2="296"
+												gradientUnits="userSpaceOnUse"
+											>
+												<stop stop-color="#0D0D0D" stop-opacity="0" />
+												<stop offset="1" stop-color="#0D0D0D" />
+											</linearGradient>
+											<linearGradient
+												id="paint19_linear_0_1"
+												x1="561.5"
+												y1="411.5"
+												x2="538.5"
+												y2="442"
+												gradientUnits="userSpaceOnUse"
+											>
+												<stop stop-color="#0D0D0D" stop-opacity="0" />
+												<stop offset="1" stop-color="#0D0D0D" />
+											</linearGradient>
+											<linearGradient
+												id="paint20_linear_0_1"
+												x1="680.5"
+												y1="192.5"
+												x2="657.5"
+												y2="223"
+												gradientUnits="userSpaceOnUse"
+											>
+												<stop stop-color="#0D0D0D" stop-opacity="0" />
+												<stop offset="1" stop-color="#0D0D0D" />
+											</linearGradient>
+											<linearGradient
+												id="paint21_linear_0_1"
+												x1="672.5"
+												y1="283.5"
+												x2="649.5"
+												y2="314"
+												gradientUnits="userSpaceOnUse"
+											>
+												<stop stop-color="#0D0D0D" stop-opacity="0" />
+												<stop offset="1" stop-color="#0D0D0D" />
+											</linearGradient>
+											<linearGradient
+												id="paint22_linear_0_1"
+												x1="559.5"
+												y1="125.5"
+												x2="536.5"
+												y2="156"
+												gradientUnits="userSpaceOnUse"
+											>
+												<stop stop-color="#0D0D0D" stop-opacity="0" />
+												<stop offset="1" stop-color="#0D0D0D" />
+											</linearGradient>
+										</defs>
+									</svg>
+								</div>
+
+								<div class="arrows-wrapper">
+									<svg
+										class="arrows-svg-wrapper"
+										viewBox="0 0 728 409"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M1 317C23 296.666 81.8 266.4 141 308"
+											stroke="#333333"
+											class="animated-path"
+										/>
+										<path
+											d="M3 316C13 317.333 31.8 329 27 365"
+											stroke="#333333"
+											class="animated-path"
+										/>
+										<path
+											d="M141 305C150.333 287.667 179.6 257.6 222 276"
+											stroke="#333333"
+											class="animated-path"
+										/>
+										<path
+											d="M142 306C153.333 300.333 179.4 296 193 324"
+											stroke="#333333"
+											class="animated-path"
+										/>
+										<path
+											d="M192 323C223 306.667 294.6 288.6 333 347"
+											stroke="#333333"
+											class="animated-path"
+										/>
+										<path
+											d="M223 276C244.667 262.334 295.2 243.2 324 276"
+											stroke="#333333"
+											class="animated-path"
+										/>
+										<path
+											d="M325 272C355 247.667 432.6 212.2 503 265"
+											stroke="#333333"
+											class="animated-path"
+										/>
+										<path
+											d="M222 279C255 243 343.6 181.8 434 225"
+											stroke="#333333"
+											class="animated-path"
+										/>
+										<path
+											d="M223 275C257.667 207.333 365.6 83.3999 520 129"
+											stroke="#333333"
+											class="animated-path"
+										/>
+										<path
+											d="M196 322C236.667 314.333 322.8 320.8 342 408"
+											stroke="#333333"
+											class="animated-path"
+										/>
+										<path
+											d="M192 322C242.667 285.667 369.8 244.4 473 370"
+											stroke="#333333"
+											class="animated-path"
+										/>
+										<path
+											d="M324 276C360 260 441.6 244.6 480 311"
+											stroke="#333333"
+											class="animated-path"
+										/>
+										<path
+											d="M323 275C357.667 251.333 451 225.6 547 312"
+											stroke="#333333"
+											class="animated-path"
+										/>
+										<path
+											d="M325 274C368.667 259.333 468 262.8 516 394"
+											stroke="#333333"
+											class="animated-path"
+										/>
+										<path
+											d="M437 221C448.667 187 495.6 124 590 144"
+											stroke="#333333"
+											class="animated-path"
+										/>
+										<path
+											d="M437 227C469.333 193.667 553 137 629 177"
+											stroke="#333333"
+											class="animated-path"
+										/>
+										<path
+											d="M439 224C468 201 542.2 165 607 205"
+											stroke="#333333"
+											class="animated-path"
+										/>
+										<path
+											d="M440 227C479.333 209.667 570.6 192 621 260"
+											stroke="#333333"
+											class="animated-path"
+										/>
+										<path
+											d="M521 133C509.334 104.667 499.4 42.6 553 21"
+											stroke="#333333"
+											class="animated-path"
+										/>
+										<path
+											d="M521 133C532.667 74.3335 590.2 -32.1998 727 11.0002"
+											stroke="#333333"
+											class="animated-path"
+										/>
+										<path
+											d="M521 135C531 104.333 570.6 48.1999 649 68.9999"
+											stroke="#333333"
+											class="animated-path"
+										/>
+										<path
+											d="M519 130C535 104 597.4 62.0002 719 102"
+											stroke="#333333"
+											class="animated-path"
+										/>
+									</svg>
+								</div>
+							</div>
+
+							<div class="europe-map-wrapper">
+								<img src="img/europe-map.png" alt="" class="europe-map-image" />
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="info section" id="info">
+					<div class="container">
+						<h2 class="appearing-element-info-block">
+							Полезная <span>информация</span>
+						</h2>
+						<div class="row">
+							<div
+								class="col-6 col-lg-4 my-2 my-lg-0 appearing-element-info-block"
+							>
+								<a
+									href="terms.html"
+									class="card d-flex flex-column overflow-hidden"
+								>
+									<div
+										class="info-icon d-flex justify-content-center align-items-center m-auto"
+									>
+										<img
+											src="img/icon/hand.svg"
+											alt="Гарантии и обязательства"
+										/>
+									</div>
+									<h5 class="text-white text-center text-lg-start mt-auto">
+										Гарантии и обязательства
+									</h5>
+									<div
+										class="d-none d-lg-flex align-items-center justify-content-between mt-3"
+									>
+										<div class="more-arrow"></div>
+										<span class="more-btn text-uppercase text-white">
+											Подробнее
+										</span>
+									</div>
+								</a>
+							</div>
+
+							<div
+								class="col-6 col-lg-4 my-2 my-lg-0 appearing-element-info-block"
+							>
+								<a
+									href="service.html"
+									class="card d-flex flex-column position-relative overflow-hidden"
+								>
+									<img
+										src="img/info-2.jpg"
+										alt="Сервисный центр"
+										class="position-absolute"
+									/>
+									<h5 class="text-white text-center text-lg-start mt-auto">
+										Сервисный центр
+									</h5>
+									<div
+										class="d-none d-lg-flex align-items-center justify-content-between mt-3"
+									>
+										<div class="more-arrow"></div>
+										<span class="more-btn text-uppercase text-white">
+											Подробнее
+										</span>
+									</div>
+								</a>
+							</div>
+
+							<div
+								class="col-6 col-lg-4 my-2 my-lg-0 appearing-element-info-block"
+							>
+								<a
+									href="delivery.html"
+									class="card d-flex flex-column position-relative overflow-hidden"
+								>
+									<img
+										src="img/info-3.jpg"
+										alt="Доставка и установка"
+										class="position-absolute"
+									/>
+									<h5 class="text-white text-center text-lg-start mt-auto">
+										Доставка и установка
+									</h5>
+									<div
+										class="d-none d-lg-flex align-items-center justify-content-between mt-3"
+									>
+										<div class="more-arrow"></div>
+										<span class="more-btn text-uppercase text-white">
+											Подробнее
+										</span>
+									</div>
+								</a>
+							</div>
+
+							<div
+								class="col-6 d-lg-none my-2 my-lg-0 appearing-element-info-block"
+							>
+								<a
+									href="blog.html"
+									class="card d-flex flex-column position-relative overflow-hidden"
+								>
+									<img
+										src="img/info-4.jpg"
+										alt="Полезные статьи"
+										class="position-absolute"
+									/>
+									<h5 class="text-white text-center text-lg-start mt-auto">
+										Полезные статьи
+									</h5>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<footer class="footer section" id="footer">
+					<div class="container">
+						<form class="row align-items-center">
+							<div class="col-lg-5">
+								<label for="name">
+									<input
+										type="name"
+										class="form-control"
+										placeholder="Имя"
+										required
+									/>
+								</label>
+							</div>
+							<div class="col-lg-5 my-3 my-lg-0">
+								<label for="tel">
+									<input
+										type="tel"
+										class="form-control"
+										placeholder="Телефон"
+										required
+									/>
+								</label>
+							</div>
+							<div class="col-lg-2">
+								<button type="submit" class="btn btn-primary h-lg-100 w-100">
+									Отправить
+								</button>
+							</div>
+						</form>
+					</div>
+					<hr />
+					<div class="container text-white">
+						<div class="row mt-5">
+							<div
+								class="col-lg-5 d-flex flex-column align-items-center d-lg-block"
+							>
+								<img src="img/footer-logo.png" alt="Bodo" />
+								<div class="mt-3">
+									Широкий ассортимент массажного оборудования
+								</div>
+								<div class="row mt-5 d-none d-lg-block">
+									<div class="col-lg-6">
+										<div class="footer-contact">
+											<div class="mb-1">Региональный отдел:</div>
+											<a href="tel:88003005577" class="text-white">
+												8 800 300 55 77
+											</a>
+										</div>
+										<div class="footer-contact my-3">
+											<div class="mb-1">Москва:</div>
+											<a href="tel:+74993017415" class="text-white">
+												+7 (499) 301-74-15
+											</a>
+										</div>
+										<div class="footer-contact">
+											<div class="mb-1">Санкт-Петербург:</div>
+											<a href="tel:+78122441191" class="text-white">
+												+7 (812) 244-11-91
+											</a>
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="footer-contact">
+											<div class="mb-1">Казань:</div>
+											<a href="tel:+78432045574" class="text-white">
+												+7 (843) 204-55-74
+											</a>
+										</div>
+										<div class="footer-contact my-3">
+											<div class="mb-1">Краснодар:</div>
+											<a href="tel:+78612060860" class="text-white">
+												+7 (861) 206-08-60
+											</a>
+										</div>
+										<div class="footer-contact">
+											<div class="mb-1">Новосибирск:</div>
+											<a href="tel:+73833442552" class="text-white">
+												+7 (383) 344-25-52
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-7 d-none d-lg-block">
+								<div class="footer-contact">
+									<div class="mb-2">По всем вопросам:</div>
+									<h4>
+										<a href="mailto:hallo@bodo-massage.ru" class="text-white">
+											hallo@bodo-massage.ru
+										</a>
+									</h4>
+								</div>
+								<div class="d-flex flex-column flex-lg-row mt-5">
+									<div class="footer-menu">
+										<h5>Каталог</h5>
+										<a href="catalog.html">Массажные кресла</a>
+										<a href="catalog.html">Массажеры</a>
+										<a href="catalog.html">Массажные столы и стулья</a>
+									</div>
+									<div class="footer-menu">
+										<h5>Клиентам</h5>
+										<a href="stock.html">Акции</a>
+										<a href="sale.html">Распродажа</a>
+										<a href="blog.html">Полезные статьи</a>
+										<a href="companies.html">Лица компании</a>
+									</div>
+									<div class="footer-menu">
+										<h5>Контакты</h5>
+										<a href="contacts.html">Адреса магазинов</a>
+										<a href="service.html">Сервисная служба</a>
+										<a href="dealer.html">Стать диллером</a>
+										<a href="requisites.html">Реквизиты</a>
+										<button class="open-modal-form-btn">
+											Контактная форма
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div
+							class="accordion accordion-flush mt-4 d-lg-none"
+							id="accordionFlushExample"
+						>
+							<div class="accordion-item">
+								<h5 class="accordion-header">
+									<button
+										class="accordion-button py-3 px-0 collapsed"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#flush-collapseOne"
+										aria-expanded="false"
+										aria-controls="flush-collapseOne"
+									>
+										Связаться с нами
+									</button>
+								</h5>
+								<div
+									id="flush-collapseOne"
+									class="accordion-collapse collapse"
+									data-bs-parent="#accordionFlushExample"
+								>
+									<div class="accordion-body">
+										<div class="footer-contact">
+											<div class="mb-1">Региональный отдел:</div>
+											<a href="tel:88003005577" class="text-white">
+												8 800 300 55 77
+											</a>
+										</div>
+										<div class="footer-contact my-3">
+											<div class="mb-1">Москва:</div>
+											<a href="tel:+74993017415" class="text-white">
+												+7 (499) 301-74-15
+											</a>
+										</div>
+										<div class="footer-contact">
+											<div class="mb-1">Санкт-Петербург:</div>
+											<a href="tel:+78122441191" class="text-white">
+												+7 (812) 244-11-91
+											</a>
+										</div>
+										<div class="footer-contact">
+											<div class="mb-1">Казань:</div>
+											<a href="tel:+78432045574" class="text-white">
+												+7 (843) 204-55-74
+											</a>
+										</div>
+										<div class="footer-contact my-3">
+											<div class="mb-1">Краснодар:</div>
+											<a href="tel:+78612060860" class="text-white">
+												+7 (861) 206-08-60
+											</a>
+										</div>
+										<div class="footer-contact">
+											<div class="mb-1">Новосибирск:</div>
+											<a href="tel:+73833442552" class="text-white">
+												+7 (383) 344-25-52
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h5 class="accordion-header">
+									<button
+										class="accordion-button py-3 px-0 collapsed"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#flush-collapseTwo"
+										aria-expanded="false"
+										aria-controls="flush-collapseTwo"
+									>
+										Каталог
+									</button>
+								</h5>
+								<div
+									id="flush-collapseTwo"
+									class="accordion-collapse collapse"
+									data-bs-parent="#accordionFlushExample"
+								>
+									<div class="accordion-body">
+										<div class="footer-menu">
+											<a href="catalog.html"> Массажные кресла </a>
+											<a href="catalog.html"> Массажеры </a>
+											<a href="catalog.html"> Массажные столы и стулья </a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h5 class="accordion-header">
+									<button
+										class="accordion-button py-3 px-0 collapsed"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#flush-collapseThree"
+										aria-expanded="false"
+										aria-controls="flush-collapseThree"
+									>
+										Клиентам
+									</button>
+								</h5>
+								<div
+									id="flush-collapseThree"
+									class="accordion-collapse collapse"
+									data-bs-parent="#accordionFlushExample"
+								>
+									<div class="accordion-body d-flex flex-column">
+										<div class="footer-menu">
+											<a href="stock.html"> Акции </a>
+											<a href="sale.html"> Распродажа </a>
+											<a href="blog.html"> Полезные статьи </a>
+											<a href="companies.html"> Лица компании </a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h5 class="accordion-header">
+									<button
+										class="accordion-button py-3 px-0 collapsed"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#flush-collapseFour"
+										aria-expanded="false"
+										aria-controls="flush-collapseThree"
+									>
+										Контакты
+									</button>
+								</h5>
+								<div
+									id="flush-collapseFour"
+									class="accordion-collapse collapse"
+									data-bs-parent="#accordionFlushExample"
+								>
+									<div class="accordion-body d-flex flex-column">
+										<div class="footer-menu">
+											<a href="contacts.html"> Адреса магазинов </a>
+											<a href="service.html"> Сервисная служба </a>
+											<a href="dealer.html"> Стать диллером </a>
+											<a href="requisites.html"> Реквизиты </a>
+											<button class="open-modal-form-btn">
+												Контактная форма
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div
+							class="footer-social d-flex align-items-center justify-content-center justify-content-lg-start mt-5"
+						>
+							<a href="#" class="me-5">
+								<img src="img/icon/footer-instagram.svg" alt="Instagram" />
+							</a>
+							<a href="#">
+								<img src="img/icon/footer-facebook.svg" alt="Facebook" />
+							</a>
+							<a
+								href="terms.html"
+								class="text-white text-underline d-none d-lg-block mx-5 px-5"
+							>
+								Политика конфиденциальности
+							</a>
+							<a
+								href="#"
+								class="ms-4 me-5 text-white d-none d-lg-flex align-items-center"
+							>
+								<img src="img/icon/footer-telegram.svg" alt="Telegram" />
+								<span class="ms-3"> Telegram </span>
+							</a>
+							<a
+								href="#"
+								class="ms-5 text-white d-none d-lg-flex align-items-center"
+							>
+								<img src="img/icon/footer-whatsapp.svg" alt="WhatsApp" />
+								<span class="ms-3"> WhatsApp </span>
+							</a>
+						</div>
+						<div class="footer-social text-center mt-4 d-lg-none">
+							<a href="terms.html" class="text-white text-underline">
+								Политика конфиденциальности
+							</a>
+						</div>
+						<div class="footer-contact text-center text-lg-start mt-5">
+							<div>
+								www.bodo-russia.ru ©2007-2024 продажа массажного оборудования,
+								массажные кресла, массажеры. 16+
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+
+		<script src="js/jquery-3.7.1.min.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
+		<script src="js/jquery.maskedinput.min.js"></script>
+		<script
+			src="https://kit.fontawesome.com/a3e1a0008d.js"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+			integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+			crossorigin="anonymous"
+		></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+		<script src="js/fullpage.js"></script>
+		<script src="js/fullpage-animations.js"></script>
+		<script src="js/animations.js"></script>
+		<script src="js/map-animations.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/preloader.js"></script>
+	</body>
+</html>
